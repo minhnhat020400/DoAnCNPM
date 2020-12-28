@@ -1,0 +1,11 @@
+D:\DoAn\MyHabit\bin\Debug\MyHabit.exe.config
+D:\DoAn\MyHabit\bin\Debug\MyHabit.exe
+D:\DoAn\MyHabit\bin\Debug\MyHabit.pdb
+D:\DoAn\MyHabit\obj\Debug\MyHabit.csprojAssemblyReference.cache
+D:\DoAn\MyHabit\obj\Debug\MyHabit.FrmLogin.resources
+D:\DoAn\MyHabit\obj\Debug\MyHabit.Properties.Resources.resources
+D:\DoAn\MyHabit\obj\Debug\MyHabit.csproj.GenerateResource.cache
+D:\DoAn\MyHabit\obj\Debug\MyHabit.csproj.CoreCompileInputs.cache
+D:\DoAn\MyHabit\obj\Debug\MyHabit.exe
+D:\DoAn\MyHabit\obj\Debug\MyHabit.pdb
+D:\DoAn\MyHabit\obj\Debug\MyHabit.FrmMain.resources
