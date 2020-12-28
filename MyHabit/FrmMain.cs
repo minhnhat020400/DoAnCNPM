@@ -23,5 +23,10 @@ namespace MyHabit
             // this.FormBorderStyle = FormBorderStyle.None;
             this.WindowState = FormWindowState.Maximized;
         }
+
+        private void btnMy_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
