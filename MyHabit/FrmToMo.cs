@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace MyHabit
 {
-    public partial class FrmMy : Form
+    public partial class FrmToMo : Form
     {
-        public FrmMy()
+        public FrmToMo()
         {
             InitializeComponent();
         }
