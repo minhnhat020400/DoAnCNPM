@@ -40,7 +40,23 @@ namespace MyHabit
 
         private void btnMy_Click(object sender, EventArgs e)
         {
+            FrmCheck frm = new FrmCheck();
+            this.Hide();
+            frm.ShowDialog();
+        }
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+            FrmBMI frm = new FrmBMI();
+            this.Hide();
+            frm.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            FormThongKetuan frm = new FormThongKetuan();
+            this.Hide();
+            frm.ShowDialog();
         }
     }
 }

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace MyHabit
 {
-    public partial class FrmToMo : Form
+    public partial class FrmCheck : Form
     {
-        public FrmToMo()
+        public FrmCheck()
         {
             InitializeComponent();
         }
@@ -22,6 +22,11 @@ namespace MyHabit
             FrmMain frm = new FrmMain();
             this.Hide();
             frm.ShowDialog();
+        }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

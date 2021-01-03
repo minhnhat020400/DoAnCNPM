@@ -32,5 +32,7 @@ D:\code2\MyHabit\obj\Debug\MyHabit.exe
 D:\code2\MyHabit\obj\Debug\MyHabit.pdb
 D:\code2\MyHabit\obj\Debug\MyHabit.FrmMain.resources
 D:\code2\MyHabit\obj\Debug\MyHabit.FrmToMo.resources
-D:\code2\MyHabit\obj\Debug\MyHabit.Check.resources
 D:\code2\MyHabit\obj\Debug\MyHabit.FrmMyInFo.resources
+D:\code2\MyHabit\obj\Debug\MyHabit.FrmBMI.resources
+D:\code2\MyHabit\obj\Debug\MyHabit.FormThongKetuan.resources
+D:\code2\MyHabit\obj\Debug\MyHabit.FrmCheck.resources
