@@ -40,7 +40,7 @@ namespace MyHabit
 
         private void btnMy_Click(object sender, EventArgs e)
         {
-            FrmCheck frm = new FrmCheck();
+            FrmCheckNgay frm = new FrmCheckNgay();
             this.Hide();
             frm.ShowDialog();
         }
