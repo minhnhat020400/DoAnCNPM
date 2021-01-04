@@ -10,19 +10,11 @@ using System.Windows.Forms;
 
 namespace MyHabit
 {
-    public partial class FormThongKetuan : Form
+    public partial class FrmKiemTraBanThan : Form
     {
-        public FormThongKetuan()
+        public FrmKiemTraBanThan()
         {
             InitializeComponent();
         }
-        #region
-        private void btnHome_Click(object sender, EventArgs e)
-        {
-            FrmMain frm = new FrmMain();
-            this.Hide();
-            frm.ShowDialog();
-        }
-        #endregion
     }
 }

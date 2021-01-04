@@ -17,13 +17,14 @@ namespace MyHabit
             InitializeComponent();
         }
 
+       
+        #region NÚT ĐIỀU KHIỂN
         private void button1_Click(object sender, EventArgs e)
         {
-            FrmMyInFo frm = new FrmMyInFo();
+            FormThongKetuan formThongKetuan = new FormThongKetuan();
             this.Hide();
-            frm.ShowDialog();
+            formThongKetuan.ShowDialog();
         }
-
         private void thoátTàiKhoảnToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Bạn có chắc muốn thoát không?",
@@ -39,6 +40,14 @@ namespace MyHabit
         }
 
         private void btnMy_Click(object sender, EventArgs e)
+        {
+            FrmKiemTraBanThan frmKiemTraBanThan = new FrmKiemTraBanThan();
+            this.Hide();
+            frmKiemTraBanThan.ShowDialog();
+        }
+        #endregion
+
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }

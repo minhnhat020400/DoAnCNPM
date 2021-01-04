@@ -93,6 +93,9 @@
     <EmbeddedResource Include="Check.resx">
       <DependentUpon>Check.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormThongKetuan.resx">
+      <DependentUpon>FormThongKetuan.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </EmbeddedResource>

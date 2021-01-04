@@ -56,8 +56,8 @@ namespace MyHabit
             this.tàiKhoảnToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(800, 54);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(1067, 54);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -77,20 +77,20 @@ namespace MyHabit
             // thoátTàiKhoảnToolStripMenuItem
             // 
             this.thoátTàiKhoảnToolStripMenuItem.Name = "thoátTàiKhoảnToolStripMenuItem";
-            this.thoátTàiKhoảnToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.thoátTàiKhoảnToolStripMenuItem.Size = new System.Drawing.Size(198, 26);
             this.thoátTàiKhoảnToolStripMenuItem.Text = "Thoát Tài Khoản";
             this.thoátTàiKhoảnToolStripMenuItem.Click += new System.EventHandler(this.thoátTàiKhoảnToolStripMenuItem_Click);
             // 
             // đổiMàuToolStripMenuItem
             // 
             this.đổiMàuToolStripMenuItem.Name = "đổiMàuToolStripMenuItem";
-            this.đổiMàuToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.đổiMàuToolStripMenuItem.Size = new System.Drawing.Size(198, 26);
             this.đổiMàuToolStripMenuItem.Text = "Đổi Màu";
             // 
             // bạnBèToolStripMenuItem
             // 
             this.bạnBèToolStripMenuItem.Name = "bạnBèToolStripMenuItem";
-            this.bạnBèToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.bạnBèToolStripMenuItem.Size = new System.Drawing.Size(198, 26);
             this.bạnBèToolStripMenuItem.Text = "Bạn bè";
             // 
             // panel1
@@ -100,9 +100,10 @@ namespace MyHabit
             this.panel1.Controls.Add(this.btnWep);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.btnHome);
-            this.panel1.Location = new System.Drawing.Point(0, 54);
+            this.panel1.Location = new System.Drawing.Point(0, 66);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(188, 396);
+            this.panel1.Size = new System.Drawing.Size(251, 487);
             this.panel1.TabIndex = 2;
             // 
             // btnDiscover
@@ -111,10 +112,10 @@ namespace MyHabit
             this.btnDiscover.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDiscover.Image = ((System.Drawing.Image)(resources.GetObject("btnDiscover.Image")));
             this.btnDiscover.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDiscover.Location = new System.Drawing.Point(0, 216);
-            this.btnDiscover.Margin = new System.Windows.Forms.Padding(2);
+            this.btnDiscover.Location = new System.Drawing.Point(0, 266);
+            this.btnDiscover.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDiscover.Name = "btnDiscover";
-            this.btnDiscover.Size = new System.Drawing.Size(188, 62);
+            this.btnDiscover.Size = new System.Drawing.Size(251, 76);
             this.btnDiscover.TabIndex = 4;
             this.btnDiscover.Text = "Khám Phá";
             this.btnDiscover.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -127,10 +128,10 @@ namespace MyHabit
             this.btnWep.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnWep.Image = ((System.Drawing.Image)(resources.GetObject("btnWep.Image")));
             this.btnWep.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnWep.Location = new System.Drawing.Point(0, 319);
-            this.btnWep.Margin = new System.Windows.Forms.Padding(2);
+            this.btnWep.Location = new System.Drawing.Point(0, 393);
+            this.btnWep.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnWep.Name = "btnWep";
-            this.btnWep.Size = new System.Drawing.Size(188, 49);
+            this.btnWep.Size = new System.Drawing.Size(251, 60);
             this.btnWep.TabIndex = 3;
             this.btnWep.Text = "Trang Chủ";
             this.btnWep.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -142,10 +143,10 @@ namespace MyHabit
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(0, 30);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Location = new System.Drawing.Point(0, 37);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(188, 63);
+            this.button1.Size = new System.Drawing.Size(251, 78);
             this.button1.TabIndex = 1;
             this.button1.Text = "Tôi";
             this.button1.UseVisualStyleBackColor = false;
@@ -157,10 +158,10 @@ namespace MyHabit
             this.btnHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHome.Image = ((System.Drawing.Image)(resources.GetObject("btnHome.Image")));
             this.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHome.Location = new System.Drawing.Point(0, 121);
-            this.btnHome.Margin = new System.Windows.Forms.Padding(2);
+            this.btnHome.Location = new System.Drawing.Point(0, 149);
+            this.btnHome.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(188, 59);
+            this.btnHome.Size = new System.Drawing.Size(251, 73);
             this.btnHome.TabIndex = 1;
             this.btnHome.Text = "Home";
             this.btnHome.UseVisualStyleBackColor = false;
@@ -170,10 +171,10 @@ namespace MyHabit
             this.btnMy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnMy.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMy.ForeColor = System.Drawing.Color.Purple;
-            this.btnMy.Location = new System.Drawing.Point(340, 139);
-            this.btnMy.Margin = new System.Windows.Forms.Padding(2);
+            this.btnMy.Location = new System.Drawing.Point(453, 171);
+            this.btnMy.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnMy.Name = "btnMy";
-            this.btnMy.Size = new System.Drawing.Size(265, 95);
+            this.btnMy.Size = new System.Drawing.Size(353, 117);
             this.btnMy.TabIndex = 4;
             this.btnMy.Text = "Check bản thân";
             this.btnMy.UseVisualStyleBackColor = false;
@@ -182,22 +183,24 @@ namespace MyHabit
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(188, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(250, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(613, 86);
+            this.pictureBox1.Size = new System.Drawing.Size(817, 106);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(340, 316);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
+            this.button2.Location = new System.Drawing.Point(453, 389);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(261, 63);
+            this.button2.Size = new System.Drawing.Size(348, 78);
             this.button2.TabIndex = 1;
             this.button2.Text = "Thống kê theo tuần";
             this.button2.UseVisualStyleBackColor = false;
@@ -205,16 +208,17 @@ namespace MyHabit
             // 
             // FrmMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnMy);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
