@@ -21,7 +21,7 @@ namespace MyHabit
         {
             // this.TopMost = true;
             // this.FormBorderStyle = FormBorderStyle.None;
-            this.WindowState = FormWindowState.Maximized;
+            //this.WindowState = FormWindowState.Maximized;
         }
 
         private void btGetIn_Click(object sender, EventArgs e)
@@ -29,6 +29,48 @@ namespace MyHabit
             FrmMain frm = new FrmMain();
             this.Hide();
             frm.ShowDialog();
+        }
+
+        private void pnl1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pnl2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnOut_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Bạn có chắc muốn thoát không?",
+                "Error", MessageBoxButtons.YesNoCancel);
+            Application.Exit();
+        }
+
+        private void tbPassword_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

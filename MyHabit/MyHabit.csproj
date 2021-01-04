@@ -46,11 +46,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FrmLogin.cs">
+    <Compile Include="FrmCheck.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmLogin.Designer.cs">
-      <DependentUpon>FrmLogin.cs</DependentUpon>
+    <Compile Include="FrmCheck.Designer.cs">
+      <DependentUpon>FrmCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBMI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBMI.Designer.cs">
+      <DependentUpon>FrmBMI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormThongKetuan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormThongKetuan.Designer.cs">
+      <DependentUpon>FormThongKetuan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formtaotaikhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formtaotaikhoan.Designer.cs">
+      <DependentUpon>formtaotaikhoan.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmMain.cs">
       <SubType>Form</SubType>
@@ -58,19 +76,46 @@
     <Compile Include="FrmMain.Designer.cs">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmMy.cs">
+    <Compile Include="FrmToMo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmMy.Designer.cs">
-      <DependentUpon>FrmMy.cs</DependentUpon>
+    <Compile Include="FrmToMo.Designer.cs">
+      <DependentUpon>FrmToMo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMyInFo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMyInFo.Designer.cs">
+      <DependentUpon>FrmMyInFo.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FrmLogin.resx">
-      <DependentUpon>FrmLogin.cs</DependentUpon>
+    <EmbeddedResource Include="FrmCheck.resx">
+      <DependentUpon>FrmCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormThongKetuan.resx">
+      <DependentUpon>FormThongKetuan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBMI.resx">
+      <DependentUpon>FrmBMI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmToMo.resx">
+      <DependentUpon>FrmToMo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMyInFo.resx">
+      <DependentUpon>FrmMyInFo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
