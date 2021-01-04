@@ -37,9 +37,9 @@ namespace MyHabit
             this.bạnBèToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnDiscover = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.btnWep = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.btnHome = new System.Windows.Forms.Button();
             this.btnMy = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
@@ -97,11 +97,16 @@ namespace MyHabit
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.panel1.Controls.Add(this.btnDiscover);
+            this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.btnWep);
             this.panel1.Controls.Add(this.button1);
+<<<<<<< HEAD
             this.panel1.Controls.Add(this.btnHome);
             this.panel1.Location = new System.Drawing.Point(0, 66);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
+=======
+            this.panel1.Location = new System.Drawing.Point(0, 54);
+>>>>>>> 6378511340614ed5f45e4220f5f354d60ddd44de
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(251, 487);
             this.panel1.TabIndex = 2;
@@ -112,8 +117,13 @@ namespace MyHabit
             this.btnDiscover.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDiscover.Image = ((System.Drawing.Image)(resources.GetObject("btnDiscover.Image")));
             this.btnDiscover.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+<<<<<<< HEAD
             this.btnDiscover.Location = new System.Drawing.Point(0, 266);
             this.btnDiscover.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+=======
+            this.btnDiscover.Location = new System.Drawing.Point(0, 209);
+            this.btnDiscover.Margin = new System.Windows.Forms.Padding(2);
+>>>>>>> 6378511340614ed5f45e4220f5f354d60ddd44de
             this.btnDiscover.Name = "btnDiscover";
             this.btnDiscover.Size = new System.Drawing.Size(251, 76);
             this.btnDiscover.TabIndex = 4;
@@ -122,16 +132,38 @@ namespace MyHabit
             this.btnDiscover.UseVisualStyleBackColor = false;
             this.btnDiscover.Click += new System.EventHandler(this.btnDiscover_Click);
             // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.Location = new System.Drawing.Point(0, 301);
+            this.button3.Margin = new System.Windows.Forms.Padding(2);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(188, 57);
+            this.button3.TabIndex = 3;
+            this.button3.Text = "BMI";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // btnWep
             // 
             this.btnWep.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnWep.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnWep.Image = ((System.Drawing.Image)(resources.GetObject("btnWep.Image")));
             this.btnWep.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+<<<<<<< HEAD
             this.btnWep.Location = new System.Drawing.Point(0, 393);
             this.btnWep.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnWep.Name = "btnWep";
             this.btnWep.Size = new System.Drawing.Size(251, 60);
+=======
+            this.btnWep.Location = new System.Drawing.Point(0, 29);
+            this.btnWep.Margin = new System.Windows.Forms.Padding(2);
+            this.btnWep.Name = "btnWep";
+            this.btnWep.Size = new System.Drawing.Size(188, 60);
+>>>>>>> 6378511340614ed5f45e4220f5f354d60ddd44de
             this.btnWep.TabIndex = 3;
             this.btnWep.Text = "Trang Chủ";
             this.btnWep.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -143,8 +175,13 @@ namespace MyHabit
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+<<<<<<< HEAD
             this.button1.Location = new System.Drawing.Point(0, 37);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+=======
+            this.button1.Location = new System.Drawing.Point(0, 117);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
+>>>>>>> 6378511340614ed5f45e4220f5f354d60ddd44de
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(251, 78);
             this.button1.TabIndex = 1;
@@ -152,6 +189,7 @@ namespace MyHabit
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+<<<<<<< HEAD
             // btnHome
             // 
             this.btnHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
@@ -166,15 +204,24 @@ namespace MyHabit
             this.btnHome.Text = "Home";
             this.btnHome.UseVisualStyleBackColor = false;
             // 
+=======
+>>>>>>> 6378511340614ed5f45e4220f5f354d60ddd44de
             // btnMy
             // 
             this.btnMy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnMy.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMy.ForeColor = System.Drawing.Color.Purple;
+<<<<<<< HEAD
             this.btnMy.Location = new System.Drawing.Point(453, 171);
             this.btnMy.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnMy.Name = "btnMy";
             this.btnMy.Size = new System.Drawing.Size(353, 117);
+=======
+            this.btnMy.Location = new System.Drawing.Point(320, 139);
+            this.btnMy.Margin = new System.Windows.Forms.Padding(2);
+            this.btnMy.Name = "btnMy";
+            this.btnMy.Size = new System.Drawing.Size(363, 95);
+>>>>>>> 6378511340614ed5f45e4220f5f354d60ddd44de
             this.btnMy.TabIndex = 4;
             this.btnMy.Text = "Check bản thân";
             this.btnMy.UseVisualStyleBackColor = false;
@@ -194,6 +241,7 @@ namespace MyHabit
             // 
             // button2
             // 
+<<<<<<< HEAD
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -205,16 +253,31 @@ namespace MyHabit
             this.button2.Text = "Thống kê theo tuần";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button1_Click);
+=======
+            this.button2.Location = new System.Drawing.Point(368, 274);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(265, 92);
+            this.button2.TabIndex = 6;
+            this.button2.Text = "Thống Kê Tuần";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+>>>>>>> 6378511340614ed5f45e4220f5f354d60ddd44de
             // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+<<<<<<< HEAD
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1067, 554);
+=======
+            this.BackColor = System.Drawing.Color.Silver;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button2);
+>>>>>>> 6378511340614ed5f45e4220f5f354d60ddd44de
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnMy);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -239,12 +302,12 @@ namespace MyHabit
         private System.Windows.Forms.ToolStripMenuItem đổiMàuToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem bạnBèToolStripMenuItem;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btnHome;
         private System.Windows.Forms.Button btnWep;
         private System.Windows.Forms.Button btnDiscover;
         private System.Windows.Forms.Button btnMy;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
     }
 }

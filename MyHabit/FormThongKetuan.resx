@@ -118,6 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+<<<<<<< HEAD
   <data name="btnDiscover.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
@@ -181,6 +182,8 @@
         J9k3efdIAAAAAElFTkSuQmCC
 </value>
   </data>
+=======
+>>>>>>> 6378511340614ed5f45e4220f5f354d60ddd44de
   <data name="btnHome.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
@@ -199,6 +202,7 @@
         WXNiuK8UWVlZporiP1rGKjWYa6XyAAAAAElFTkSuQmCC
 </value>
   </data>
+<<<<<<< HEAD
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         /9j/4AAQSkZJRgABAQEASABIAAD/4RbURXhpZgAATU0AKgAAAAgACQESAAMAAAABAAEAAAEaAAUAAAAB
@@ -738,4 +742,6 @@
         CiiigAooooA//9k=
 </value>
   </data>
+=======
+>>>>>>> 6378511340614ed5f45e4220f5f354d60ddd44de
 </root>

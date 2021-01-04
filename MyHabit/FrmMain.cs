@@ -41,6 +41,7 @@ namespace MyHabit
 
         private void btnMy_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             FrmKiemTraBanThan frmKiemTraBanThan = new FrmKiemTraBanThan();
             this.Hide();
             frmKiemTraBanThan.ShowDialog();
@@ -49,7 +50,25 @@ namespace MyHabit
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
+=======
+            FrmCheck frm = new FrmCheck();
+            this.Hide();
+            frm.ShowDialog();
+        }
+>>>>>>> 6378511340614ed5f45e4220f5f354d60ddd44de
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+            FrmBMI frm = new FrmBMI();
+            this.Hide();
+            frm.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            FormThongKetuan frm = new FormThongKetuan();
+            this.Hide();
+            frm.ShowDialog();
         }
     }
 }

@@ -46,11 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Check.cs">
+    <Compile Include="FrmCheck.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Check.Designer.cs">
-      <DependentUpon>Check.cs</DependentUpon>
+    <Compile Include="FrmCheck.Designer.cs">
+      <DependentUpon>FrmCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBMI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBMI.Designer.cs">
+      <DependentUpon>FrmBMI.cs</DependentUpon>
     </Compile>
     <Compile Include="FormThongKetuan.cs">
       <SubType>Form</SubType>
@@ -90,8 +96,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Check.resx">
-      <DependentUpon>Check.cs</DependentUpon>
+    <EmbeddedResource Include="FrmCheck.resx">
+      <DependentUpon>FrmCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormThongKetuan.resx">
+      <DependentUpon>FormThongKetuan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBMI.resx">
+      <DependentUpon>FrmBMI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormThongKetuan.resx">
       <DependentUpon>FormThongKetuan.cs</DependentUpon>

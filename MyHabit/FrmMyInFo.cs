@@ -31,5 +31,12 @@ namespace MyHabit
         {
 
         }
+
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            FrmMain frm = new FrmMain();
+            this.Hide();
+            frm.ShowDialog();
+        }
     }
 }

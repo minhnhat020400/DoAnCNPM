@@ -10,26 +10,23 @@ using System.Windows.Forms;
 
 namespace MyHabit
 {
-    public partial class FormThongKetuan : Form
+    public partial class FrmCheck : Form
     {
-        public FormThongKetuan()
+        public FrmCheck()
         {
             InitializeComponent();
         }
-<<<<<<< HEAD
-        #region
-=======
 
->>>>>>> 6378511340614ed5f45e4220f5f354d60ddd44de
         private void btnHome_Click(object sender, EventArgs e)
         {
             FrmMain frm = new FrmMain();
             this.Hide();
             frm.ShowDialog();
         }
-<<<<<<< HEAD
-        #endregion
-=======
->>>>>>> 6378511340614ed5f45e4220f5f354d60ddd44de
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

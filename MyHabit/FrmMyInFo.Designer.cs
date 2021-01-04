@@ -47,6 +47,7 @@ namespace MyHabit
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btnHome = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -219,7 +220,7 @@ namespace MyHabit
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(601, 92);
+            this.pictureBox2.Location = new System.Drawing.Point(584, 177);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(171, 176);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -227,12 +228,29 @@ namespace MyHabit
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
-            // FrmMy
+            // btnHome
+            // 
+            this.btnHome.BackColor = System.Drawing.Color.Transparent;
+            this.btnHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHome.Image = ((System.Drawing.Image)(resources.GetObject("btnHome.Image")));
+            this.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHome.Location = new System.Drawing.Point(667, 91);
+            this.btnHome.Margin = new System.Windows.Forms.Padding(2);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.Size = new System.Drawing.Size(132, 45);
+            this.btnHome.TabIndex = 12;
+            this.btnHome.Text = "Home";
+            this.btnHome.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnHome.UseVisualStyleBackColor = false;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
+            // 
+            // FrmMyInFo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 479);
+            this.Controls.Add(this.btnHome);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -251,7 +269,7 @@ namespace MyHabit
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FrmMy";
+            this.Name = "FrmMyInFo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmMy";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -280,5 +298,6 @@ namespace MyHabit
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button btnHome;
     }
 }

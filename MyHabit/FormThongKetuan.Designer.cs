@@ -30,6 +30,7 @@ namespace MyHabit
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormThongKetuan));
+<<<<<<< HEAD
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnDiscover = new System.Windows.Forms.Button();
             this.btnWep = new System.Windows.Forms.Button();
@@ -185,12 +186,42 @@ namespace MyHabit
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabControl1.ResumeLayout(false);
+=======
+            this.btnHome = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // btnHome
+            // 
+            this.btnHome.BackColor = System.Drawing.Color.Transparent;
+            this.btnHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHome.Image = ((System.Drawing.Image)(resources.GetObject("btnHome.Image")));
+            this.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHome.Location = new System.Drawing.Point(667, 11);
+            this.btnHome.Margin = new System.Windows.Forms.Padding(2);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.Size = new System.Drawing.Size(132, 45);
+            this.btnHome.TabIndex = 14;
+            this.btnHome.Text = "Home";
+            this.btnHome.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnHome.UseVisualStyleBackColor = false;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
+            // 
+            // FormThongKetuan
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnHome);
+            this.Name = "FormThongKetuan";
+            this.Text = "Form2";
+>>>>>>> 6378511340614ed5f45e4220f5f354d60ddd44de
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
+<<<<<<< HEAD
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnDiscover;
         private System.Windows.Forms.Button btnWep;
@@ -201,5 +232,8 @@ namespace MyHabit
         private System.Windows.Forms.TabPage tabEating;
         private System.Windows.Forms.TabPage tabDrinking;
         private System.Windows.Forms.TabPage tabSleeping;
+=======
+        private System.Windows.Forms.Button btnHome;
+>>>>>>> 6378511340614ed5f45e4220f5f354d60ddd44de
     }
 }
