@@ -134,7 +134,7 @@ namespace MyHabit
             // 
             // btnTaoLai
             // 
-            this.btnTaoLai.Location = new System.Drawing.Point(381, 379);
+            this.btnTaoLai.Location = new System.Drawing.Point(370, 379);
             this.btnTaoLai.Name = "btnTaoLai";
             this.btnTaoLai.Size = new System.Drawing.Size(75, 23);
             this.btnTaoLai.TabIndex = 2;
