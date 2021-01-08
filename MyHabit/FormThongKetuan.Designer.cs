@@ -30,6 +30,16 @@ namespace MyHabit
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormThongKetuan));
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnDiscover = new System.Windows.Forms.Button();
@@ -40,9 +50,18 @@ namespace MyHabit
             this.tabEat = new System.Windows.Forms.TabPage();
             this.tabDrink = new System.Windows.Forms.TabPage();
             this.tabSleep = new System.Windows.Forms.TabPage();
+            this.chartNgu = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chartUong = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chartAn = new System.Windows.Forms.DataVisualization.Charting.Chart();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
+            this.tabEat.SuspendLayout();
+            this.tabDrink.SuspendLayout();
+            this.tabSleep.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chartNgu)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartUong)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartAn)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -143,6 +162,7 @@ namespace MyHabit
             // 
             // tabEat
             // 
+            this.tabEat.Controls.Add(this.chartAn);
             this.tabEat.Location = new System.Drawing.Point(4, 25);
             this.tabEat.Name = "tabEat";
             this.tabEat.Padding = new System.Windows.Forms.Padding(3);
@@ -153,6 +173,7 @@ namespace MyHabit
             // 
             // tabDrink
             // 
+            this.tabDrink.Controls.Add(this.chartUong);
             this.tabDrink.Location = new System.Drawing.Point(4, 25);
             this.tabDrink.Name = "tabDrink";
             this.tabDrink.Padding = new System.Windows.Forms.Padding(3);
@@ -163,6 +184,7 @@ namespace MyHabit
             // 
             // tabSleep
             // 
+            this.tabSleep.Controls.Add(this.chartNgu);
             this.tabSleep.Location = new System.Drawing.Point(4, 25);
             this.tabSleep.Name = "tabSleep";
             this.tabSleep.Padding = new System.Windows.Forms.Padding(3);
@@ -170,6 +192,60 @@ namespace MyHabit
             this.tabSleep.TabIndex = 2;
             this.tabSleep.Text = "ngủ";
             this.tabSleep.UseVisualStyleBackColor = true;
+            // 
+            // chartNgu
+            // 
+            chartArea3.Name = "ChartArea1";
+            this.chartNgu.ChartAreas.Add(chartArea3);
+            this.chartNgu.Dock = System.Windows.Forms.DockStyle.Fill;
+            legend3.Name = "Legend1";
+            this.chartNgu.Legends.Add(legend3);
+            this.chartNgu.Location = new System.Drawing.Point(3, 3);
+            this.chartNgu.Name = "chartNgu";
+            series3.ChartArea = "ChartArea1";
+            series3.Legend = "Legend1";
+            series3.Name = "ngu";
+            this.chartNgu.Series.Add(series3);
+            this.chartNgu.Size = new System.Drawing.Size(785, 427);
+            this.chartNgu.TabIndex = 0;
+            this.chartNgu.Text = "chart1";
+            // 
+            // chartUong
+            // 
+            chartArea2.Name = "ChartArea1";
+            this.chartUong.ChartAreas.Add(chartArea2);
+            this.chartUong.Dock = System.Windows.Forms.DockStyle.Fill;
+            legend2.Name = "Legend1";
+            this.chartUong.Legends.Add(legend2);
+            this.chartUong.Location = new System.Drawing.Point(3, 3);
+            this.chartUong.Name = "chartUong";
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "uong";
+            this.chartUong.Series.Add(series2);
+            this.chartUong.Size = new System.Drawing.Size(785, 427);
+            this.chartUong.TabIndex = 1;
+            this.chartUong.Text = "chart2";
+            // 
+            // chartAn
+            // 
+            chartArea1.Name = "ChartArea1";
+            this.chartAn.ChartAreas.Add(chartArea1);
+            this.chartAn.Dock = System.Windows.Forms.DockStyle.Fill;
+            legend1.Name = "Legend1";
+            this.chartAn.Legends.Add(legend1);
+            this.chartAn.Location = new System.Drawing.Point(3, 3);
+            this.chartAn.Name = "chartAn";
+            this.chartAn.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "an";
+            this.chartAn.Series.Add(series1);
+            this.chartAn.Size = new System.Drawing.Size(785, 427);
+            this.chartAn.TabIndex = 1;
+            this.chartAn.Text = "chart3";
+            title1.Name = "Title1";
+            this.chartAn.Titles.Add(title1);
             // 
             // FormThongKetuan
             // 
@@ -179,12 +255,19 @@ namespace MyHabit
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormThongKetuan";
             this.Text = "Form2";
+            this.Load += new System.EventHandler(this.FormThongKetuan_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
+            this.tabEat.ResumeLayout(false);
+            this.tabDrink.ResumeLayout(false);
+            this.tabSleep.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.chartNgu)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartUong)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartAn)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -201,5 +284,8 @@ namespace MyHabit
         private System.Windows.Forms.TabPage tabEat;
         private System.Windows.Forms.TabPage tabDrink;
         private System.Windows.Forms.TabPage tabSleep;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartNgu;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartAn;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartUong;
     }
 }
