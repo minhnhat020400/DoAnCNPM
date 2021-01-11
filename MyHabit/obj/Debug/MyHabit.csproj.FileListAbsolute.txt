@@ -36,8 +36,39 @@ D:\code2\MyHabit\obj\Debug\MyHabit.FrmMyInFo.resources
 D:\code2\MyHabit\obj\Debug\MyHabit.FrmBMI.resources
 D:\code2\MyHabit\obj\Debug\MyHabit.FormThongKetuan.resources
 D:\code2\MyHabit\obj\Debug\MyHabit.FrmCheck.resources
+<<<<<<< HEAD
 C:\Users\Nhat\Desktop\nhat2\MyHabit\obj\Debug\MyHabit.FrmCheck.resources
 C:\Users\Nhat\Desktop\nhat2\MyHabit\obj\Debug\MyHabit.FormThongKetuan.resources
 C:\Users\Nhat\Desktop\nhat2\MyHabit\obj\Debug\MyHabit.FrmBMI.resources
 C:\Users\Nhat\Desktop\nhat2\MyHabit\obj\Debug\MyHabit.FrmToMo.resources
 C:\Users\Nhat\Desktop\nhat2\MyHabit\obj\Debug\MyHabit.FrmMyInFo.resources
+=======
+D:\my my\MyHabit\bin\Debug\MyHabit.exe.config
+D:\my my\MyHabit\bin\Debug\MyHabit.exe
+D:\my my\MyHabit\bin\Debug\MyHabit.pdb
+D:\my my\MyHabit\bin\Debug\LiveCharts.dll
+D:\my my\MyHabit\bin\Debug\LiveCharts.WinForms.dll
+D:\my my\MyHabit\bin\Debug\LiveCharts.Wpf.dll
+D:\my my\MyHabit\bin\Debug\LiveCharts.pdb
+D:\my my\MyHabit\bin\Debug\LiveCharts.xml
+D:\my my\MyHabit\bin\Debug\LiveCharts.WinForms.pdb
+D:\my my\MyHabit\bin\Debug\LiveCharts.WinForms.xml
+D:\my my\MyHabit\bin\Debug\LiveCharts.Wpf.pdb
+D:\my my\MyHabit\bin\Debug\LiveCharts.Wpf.xml
+D:\my my\MyHabit\obj\Debug\MyHabit.csprojAssemblyReference.cache
+D:\my my\MyHabit\obj\Debug\MyHabit.FrmCheck.resources
+D:\my my\MyHabit\obj\Debug\MyHabit.FormThongKetuan.resources
+D:\my my\MyHabit\obj\Debug\MyHabit.FrmBMI.resources
+D:\my my\MyHabit\obj\Debug\MyHabit.FrmMain.resources
+D:\my my\MyHabit\obj\Debug\MyHabit.FrmToMo.resources
+D:\my my\MyHabit\obj\Debug\MyHabit.FrmLogin.resources
+D:\my my\MyHabit\obj\Debug\MyHabit.FrmMyInFo.resources
+D:\my my\MyHabit\obj\Debug\MyHabit.Properties.Resources.resources
+D:\my my\MyHabit\obj\Debug\MyHabit.csproj.GenerateResource.cache
+D:\my my\MyHabit\obj\Debug\MyHabit.csproj.CoreCompileInputs.cache
+D:\my my\MyHabit\obj\Debug\MyHabit.csproj.CopyComplete
+D:\my my\MyHabit\obj\Debug\MyHabit.exe
+D:\my my\MyHabit\obj\Debug\MyHabit.pdb
+D:\my my\MyHabit\obj\Debug\MyHabit.FrmEat.resources
+D:\my my\MyHabit\obj\Debug\MyHabit.FrmDrink.resources
+>>>>>>> develop

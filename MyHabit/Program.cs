@@ -16,7 +16,11 @@ namespace MyHabit
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+<<<<<<< HEAD
             Application.Run(new FormThongKetuan());
+=======
+            Application.Run(new FrmCheck());
+>>>>>>> develop
         }
     }
 }

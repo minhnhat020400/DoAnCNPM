@@ -172,8 +172,13 @@ namespace MyHabit
             this.btnMy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnMy.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMy.ForeColor = System.Drawing.Color.Purple;
+<<<<<<< HEAD
             this.btnMy.Location = new System.Drawing.Point(432, 171);
             this.btnMy.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+=======
+            this.btnMy.Location = new System.Drawing.Point(342, 129);
+            this.btnMy.Margin = new System.Windows.Forms.Padding(2);
+>>>>>>> develop
             this.btnMy.Name = "btnMy";
             this.btnMy.Size = new System.Drawing.Size(484, 117);
             this.btnMy.TabIndex = 4;
@@ -194,8 +199,12 @@ namespace MyHabit
             // 
             // button2
             // 
+<<<<<<< HEAD
             this.button2.Location = new System.Drawing.Point(493, 323);
             this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+=======
+            this.button2.Location = new System.Drawing.Point(368, 274);
+>>>>>>> develop
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(353, 113);
             this.button2.TabIndex = 6;
