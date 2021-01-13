@@ -36,6 +36,11 @@ D:\code2\MyHabit\obj\Debug\MyHabit.FrmMyInFo.resources
 D:\code2\MyHabit\obj\Debug\MyHabit.FrmBMI.resources
 D:\code2\MyHabit\obj\Debug\MyHabit.FormThongKetuan.resources
 D:\code2\MyHabit\obj\Debug\MyHabit.FrmCheck.resources
+C:\Users\Nhat\Desktop\nhat2\MyHabit\obj\Debug\MyHabit.FrmCheck.resources
+C:\Users\Nhat\Desktop\nhat2\MyHabit\obj\Debug\MyHabit.FormThongKetuan.resources
+C:\Users\Nhat\Desktop\nhat2\MyHabit\obj\Debug\MyHabit.FrmBMI.resources
+C:\Users\Nhat\Desktop\nhat2\MyHabit\obj\Debug\MyHabit.FrmToMo.resources
+C:\Users\Nhat\Desktop\nhat2\MyHabit\obj\Debug\MyHabit.FrmMyInFo.resources
 D:\my my\MyHabit\bin\Debug\MyHabit.exe.config
 D:\my my\MyHabit\bin\Debug\MyHabit.exe
 D:\my my\MyHabit\bin\Debug\MyHabit.pdb
@@ -64,3 +69,5 @@ D:\my my\MyHabit\obj\Debug\MyHabit.exe
 D:\my my\MyHabit\obj\Debug\MyHabit.pdb
 D:\my my\MyHabit\obj\Debug\MyHabit.FrmEat.resources
 D:\my my\MyHabit\obj\Debug\MyHabit.FrmDrink.resources
+C:\Users\Nhat\Desktop\nhat2\MyHabit\obj\Debug\MyHabit.FrmDrink.resources
+C:\Users\Nhat\Desktop\nhat2\MyHabit\obj\Debug\MyHabit.FrmEat.resources
