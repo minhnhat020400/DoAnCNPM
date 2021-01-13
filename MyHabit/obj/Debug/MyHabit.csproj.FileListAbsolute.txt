@@ -71,3 +71,18 @@ D:\my my\MyHabit\obj\Debug\MyHabit.FrmEat.resources
 D:\my my\MyHabit\obj\Debug\MyHabit.FrmDrink.resources
 C:\Users\Nhat\Desktop\nhat2\MyHabit\obj\Debug\MyHabit.FrmDrink.resources
 C:\Users\Nhat\Desktop\nhat2\MyHabit\obj\Debug\MyHabit.FrmEat.resources
+C:\Users\Nhat\Desktop\Myhabit\MyHabit\obj\Debug\MyHabit.csprojAssemblyReference.cache
+C:\Users\Nhat\Desktop\Myhabit\MyHabit\obj\Debug\MyHabit.FrmDrink.resources
+C:\Users\Nhat\Desktop\Myhabit\MyHabit\obj\Debug\MyHabit.FrmEat.resources
+C:\Users\Nhat\Desktop\Myhabit\MyHabit\obj\Debug\MyHabit.FrmCheck.resources
+C:\Users\Nhat\Desktop\Myhabit\MyHabit\obj\Debug\MyHabit.FormThongKetuan.resources
+C:\Users\Nhat\Desktop\Myhabit\MyHabit\obj\Debug\MyHabit.FrmBMI.resources
+C:\Users\Nhat\Desktop\Myhabit\MyHabit\obj\Debug\MyHabit.FrmMain.resources
+C:\Users\Nhat\Desktop\Myhabit\MyHabit\obj\Debug\MyHabit.FrmToMo.resources
+C:\Users\Nhat\Desktop\Myhabit\MyHabit\obj\Debug\MyHabit.FrmLogin.resources
+C:\Users\Nhat\Desktop\Myhabit\MyHabit\obj\Debug\MyHabit.FrmMyInFo.resources
+C:\Users\Nhat\Desktop\Myhabit\MyHabit\obj\Debug\MyHabit.Properties.Resources.resources
+C:\Users\Nhat\Desktop\Myhabit\MyHabit\obj\Debug\MyHabit.csproj.GenerateResource.cache
+C:\Users\Nhat\Desktop\Myhabit\MyHabit\obj\Debug\MyHabit.csproj.CoreCompileInputs.cache
+C:\Users\Nhat\Desktop\Myhabit\MyHabit\obj\Debug\MyHabit.exe
+C:\Users\Nhat\Desktop\Myhabit\MyHabit\obj\Debug\MyHabit.pdb
