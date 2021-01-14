@@ -285,9 +285,30 @@ namespace MyHabit
             int[] arr = {12000,2500,16000,17000,10000,12100,20000 };
             double[] arr2 = { 14.6, 20.8, 15, 9.5, 22, 6, 15 };
             double[] arr3 = { 22, 61, 22, 78, 99, 55, 34 };
-             loadAn(arr);
+            loadAn(arr);
             loadUong(arr2);
             loadNgu(arr3);
+        }
+
+        private void btStreat_Click(object sender, EventArgs e)
+        {
+            int[] arr = { 12000, 2500, 16000, 17000, 10000, 12100, 20000 };
+            double[] arr2 = { 14.6, 20.8, 15, 9.5, 22, 6, 15 };
+            double[] arr3 = { 22, 61, 22, 78, 99, 55, 34 };
+            loadAn(arr);
+            loadUong(arr2);
+            loadNgu(arr3);
+        }
+
+        private void btNext_Click(object sender, EventArgs e)
+        {
+            int[] arr = { 12000, 2500, 16000, 17000, 10000, 12100, 20000 };
+            double[] arr2 = { 14.6, 20.8, 15, 9.5, 22, 6, 15 };
+            double[] arr3 = { 22, 61, 22, 78, 99, 55, 34 };
+            loadAn(arr);
+            loadUong(arr2);
+            loadNgu(arr3);
+
         }
     }
 }

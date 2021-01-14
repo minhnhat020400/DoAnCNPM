@@ -72,5 +72,18 @@ namespace MyHabit
         {
 
         }
+
+        private void btCreateAcc_Click(object sender, EventArgs e)
+        {
+            FrmCreateAccount  createAccount= new FrmCreateAccount();
+            this.Hide();
+            createAccount.Show();
+        }
+
+        private void btChagePass_Click(object sender, EventArgs e)
+        {
+            FrmChagePassWord frmChagePassWord = new FrmChagePassWord();
+            frmChagePassWord.ShowDialog();
+        }
     }
 }
