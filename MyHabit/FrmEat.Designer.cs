@@ -53,9 +53,9 @@ namespace MyHabit
             this.buoiDataGridViewTextBoxColumn,
             this.caloDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.revenueBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(550, 12);
+            this.dataGridView1.Location = new System.Drawing.Point(533, 12);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(238, 128);
+            this.dataGridView1.Size = new System.Drawing.Size(255, 128);
             this.dataGridView1.TabIndex = 0;
             // 
             // buoiDataGridViewTextBoxColumn
@@ -90,7 +90,7 @@ namespace MyHabit
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(633, 158);
+            this.button1.Location = new System.Drawing.Point(615, 160);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 2;
