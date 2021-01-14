@@ -74,6 +74,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Data1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="FrmChagePassWord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmChagePassWord.Designer.cs">
+      <DependentUpon>FrmChagePassWord.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmCheck.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,6 +103,12 @@
     </Compile>
     <Compile Include="formtaotaikhoan.Designer.cs">
       <DependentUpon>formtaotaikhoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCreateAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCreateAccount.Designer.cs">
+      <DependentUpon>FrmCreateAccount.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmDrink.cs">
       <SubType>Form</SubType>
@@ -142,6 +154,12 @@
     <Compile Include="FrmEat.Designer.cs">
       <DependentUpon>FrmEat.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FrmChagePassWord.resx">
+      <DependentUpon>FrmChagePassWord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCreateAccount.resx">
+      <DependentUpon>FrmCreateAccount.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmDrink.resx">
       <DependentUpon>FrmDrink.cs</DependentUpon>
     </EmbeddedResource>

@@ -46,6 +46,7 @@ namespace MyHabit
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
             this.backgroundWorker3 = new System.ComponentModel.BackgroundWorker();
+            this.btChagePass = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -57,22 +58,23 @@ namespace MyHabit
             // 
             this.btCreateAcc.BackColor = System.Drawing.Color.Black;
             this.btCreateAcc.ForeColor = System.Drawing.Color.White;
-            this.btCreateAcc.Location = new System.Drawing.Point(581, 324);
-            this.btCreateAcc.Margin = new System.Windows.Forms.Padding(2);
+            this.btCreateAcc.Location = new System.Drawing.Point(775, 399);
+            this.btCreateAcc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btCreateAcc.Name = "btCreateAcc";
-            this.btCreateAcc.Size = new System.Drawing.Size(98, 37);
+            this.btCreateAcc.Size = new System.Drawing.Size(131, 46);
             this.btCreateAcc.TabIndex = 1;
             this.btCreateAcc.Text = "Tạo tài khoản";
             this.btCreateAcc.UseVisualStyleBackColor = false;
+            this.btCreateAcc.Click += new System.EventHandler(this.btCreateAcc_Click);
             // 
             // btnOut
             // 
             this.btnOut.BackColor = System.Drawing.Color.Black;
             this.btnOut.ForeColor = System.Drawing.Color.Transparent;
-            this.btnOut.Location = new System.Drawing.Point(508, 394);
-            this.btnOut.Margin = new System.Windows.Forms.Padding(2);
+            this.btnOut.Location = new System.Drawing.Point(607, 486);
+            this.btnOut.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnOut.Name = "btnOut";
-            this.btnOut.Size = new System.Drawing.Size(98, 37);
+            this.btnOut.Size = new System.Drawing.Size(131, 46);
             this.btnOut.TabIndex = 3;
             this.btnOut.Text = "Thoát";
             this.btnOut.UseVisualStyleBackColor = false;
@@ -82,10 +84,10 @@ namespace MyHabit
             // 
             this.btGetIn.BackColor = System.Drawing.Color.Black;
             this.btGetIn.ForeColor = System.Drawing.Color.Transparent;
-            this.btGetIn.Location = new System.Drawing.Point(455, 324);
-            this.btGetIn.Margin = new System.Windows.Forms.Padding(2);
+            this.btGetIn.Location = new System.Drawing.Point(607, 399);
+            this.btGetIn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btGetIn.Name = "btGetIn";
-            this.btGetIn.Size = new System.Drawing.Size(87, 37);
+            this.btGetIn.Size = new System.Drawing.Size(116, 46);
             this.btGetIn.TabIndex = 0;
             this.btGetIn.Text = "Đang nhập";
             this.btGetIn.UseVisualStyleBackColor = false;
@@ -96,8 +98,9 @@ namespace MyHabit
             this.pictureBox1.BackColor = System.Drawing.Color.White;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(399, 569);
+            this.pictureBox1.Size = new System.Drawing.Size(532, 700);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -107,17 +110,19 @@ namespace MyHabit
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Location = new System.Drawing.Point(0, 1);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(399, 609);
+            this.panel2.Size = new System.Drawing.Size(532, 750);
             this.panel2.TabIndex = 5;
             // 
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.White;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(41, 176);
+            this.pictureBox2.Location = new System.Drawing.Point(55, 217);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(317, 323);
+            this.pictureBox2.Size = new System.Drawing.Size(423, 398);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
@@ -126,9 +131,10 @@ namespace MyHabit
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(479, 60);
+            this.label1.Location = new System.Drawing.Point(639, 74);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(200, 33);
+            this.label1.Size = new System.Drawing.Size(242, 40);
             this.label1.TabIndex = 6;
             this.label1.Text = "Ready to login";
             // 
@@ -136,9 +142,10 @@ namespace MyHabit
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(430, 151);
+            this.label2.Location = new System.Drawing.Point(573, 186);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(93, 18);
+            this.label2.Size = new System.Drawing.Size(116, 23);
             this.label2.TabIndex = 6;
             this.label2.Text = "User name";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -147,9 +154,10 @@ namespace MyHabit
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(430, 232);
+            this.label3.Location = new System.Drawing.Point(573, 286);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(84, 18);
+            this.label3.Size = new System.Drawing.Size(104, 23);
             this.label3.TabIndex = 6;
             this.label3.Text = "Password";
             this.label3.Click += new System.EventHandler(this.label2_Click);
@@ -157,9 +165,10 @@ namespace MyHabit
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(433, 172);
+            this.pictureBox3.Location = new System.Drawing.Point(577, 212);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(281, 43);
+            this.pictureBox3.Size = new System.Drawing.Size(375, 53);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 11;
             this.pictureBox3.TabStop = false;
@@ -168,20 +177,21 @@ namespace MyHabit
             // 
             this.textBox3.BackColor = System.Drawing.Color.WhiteSmoke;
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(443, 177);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox3.Location = new System.Drawing.Point(591, 218);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(262, 31);
+            this.textBox3.Size = new System.Drawing.Size(348, 37);
             this.textBox3.TabIndex = 12;
             this.textBox3.Text = "trang";
             // 
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(433, 253);
+            this.pictureBox4.Location = new System.Drawing.Point(577, 311);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(281, 43);
+            this.pictureBox4.Size = new System.Drawing.Size(375, 53);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 11;
             this.pictureBox4.TabStop = false;
@@ -191,22 +201,36 @@ namespace MyHabit
             this.textBox4.BackColor = System.Drawing.Color.WhiteSmoke;
             this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox4.ForeColor = System.Drawing.Color.Black;
-            this.textBox4.Location = new System.Drawing.Point(443, 258);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox4.Location = new System.Drawing.Point(591, 318);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
             this.textBox4.PasswordChar = '*';
-            this.textBox4.Size = new System.Drawing.Size(262, 33);
+            this.textBox4.Size = new System.Drawing.Size(348, 40);
             this.textBox4.TabIndex = 13;
             this.textBox4.Text = "1";
             // 
+            // btChagePass
+            // 
+            this.btChagePass.BackColor = System.Drawing.Color.Black;
+            this.btChagePass.ForeColor = System.Drawing.Color.White;
+            this.btChagePass.Location = new System.Drawing.Point(775, 486);
+            this.btChagePass.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btChagePass.Name = "btChagePass";
+            this.btChagePass.Size = new System.Drawing.Size(131, 46);
+            this.btChagePass.TabIndex = 14;
+            this.btChagePass.Text = "Đổi Mật Khẩu";
+            this.btChagePass.UseVisualStyleBackColor = false;
+            this.btChagePass.Click += new System.EventHandler(this.btChagePass_Click);
+            // 
             // FrmLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(746, 532);
+            this.ClientSize = new System.Drawing.Size(995, 655);
+            this.Controls.Add(this.btChagePass);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.pictureBox4);
@@ -219,7 +243,8 @@ namespace MyHabit
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.IsMdiContainer = true;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FrmLogin";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -252,6 +277,7 @@ namespace MyHabit
         private System.Windows.Forms.TextBox textBox4;
         private System.ComponentModel.BackgroundWorker backgroundWorker2;
         private System.ComponentModel.BackgroundWorker backgroundWorker3;
+        private System.Windows.Forms.Button btChagePass;
     }
 }
 
