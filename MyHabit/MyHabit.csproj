@@ -154,6 +154,12 @@
     <Compile Include="FrmEat.Designer.cs">
       <DependentUpon>FrmEat.cs</DependentUpon>
     </Compile>
+    <Compile Include="ringringForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ringringForm.Designer.cs">
+      <DependentUpon>ringringForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FrmChagePassWord.resx">
       <DependentUpon>FrmChagePassWord.cs</DependentUpon>
     </EmbeddedResource>
@@ -178,6 +184,9 @@
     <EmbeddedResource Include="FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmSleep.resx">
+      <DependentUpon>FrmSleep.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmToMo.resx">
       <DependentUpon>FrmToMo.cs</DependentUpon>
     </EmbeddedResource>
@@ -196,6 +205,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ringringForm.resx">
+      <DependentUpon>ringringForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Data.xsc">
       <DependentUpon>Data.xsd</DependentUpon>
     </None>
