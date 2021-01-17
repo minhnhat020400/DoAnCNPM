@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Media;
 using System.IO;
+using System.Net.Http;
+using System.Net.Http.Headers;
 
 namespace MyHabit
 {
@@ -28,8 +30,60 @@ namespace MyHabit
         SoundPlayer soundPlayer;
 
         ringringForm ringForm;
-  
 
+        static HttpClient client = new HttpClient();
+        public string Token;
+        public class Login
+        {
+            public string from { get; set; }
+            public string to { get; set; }
+            
+
+        }
+
+        // vì server trả về một string nên ở dây là 
+        public static async Task<String> test(string fr, string t)
+        {
+            HttpClient client = new HttpClient();
+            client.BaseAddress = new Uri("http://61.14.233.182");
+            client.DefaultRequestHeaders.Accept.Clear();
+            client.DefaultRequestHeaders.Accept.Add(
+                new MediaTypeWithQualityHeaderValue("application/json"));
+            // bật cái dưới khi gọi api khác trừ login register forget password
+            /*client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", "token");*/
+
+            // Link api
+            String apiUrl = "/api/sleeping-habit/add-sleeping-hour";
+
+            // Model để gửi dữ liệu lên server
+            Login login = new Login()
+            {
+                from = fr,
+                to = t,
+               
+            };
+
+            // POST dùng postAsJsonAsync có body
+            // Get dùng GetAsync ko có body
+            // PUT dùng PutAsJsonAsync có body
+            // Delete dùng DeleteAsync ko có body
+            HttpResponseMessage response = await client.PostAsJsonAsync(
+                apiUrl, login); // login là body của api
+
+            // Kiểm tra api có thành công hay ko
+            if (response.IsSuccessStatusCode)
+            {
+                // nếu server trả về 1 chuổi thì mình dùng như cách bên dưới
+                // server trả về một đối tượng thì dùng await response.Content.ReadAsAsync<Doi tuong>()
+                var token = await response.Content.ReadAsStringAsync();
+                return token;
+            }
+            else
+            {
+                var token = await response.Content.ReadAsStringAsync();
+                return null;
+            }
+        }
         public FrmSleep()
         {
             InitializeComponent();
@@ -41,7 +95,7 @@ namespace MyHabit
         {
             txtDate.Text = DateTime.Now.ToString("dd/MM/yyyy");
             txtTime.Text = DateTime.Now.ToString("h:mm tt");
-
+            GetSetting();
             UpdateData();
         }
         private void UpdateData()
@@ -160,6 +214,47 @@ namespace MyHabit
         private void label8_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void label13_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            FrmMain frm = new FrmMain();
+            this.Hide();
+            frm.ShowDialog();
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private async void btnSave_Click(object sender, EventArgs e)
+        {
+            SaveSetting();
+            var Token = await test(txtfr.Text, txtt.Text);
+        }
+        public void GetSetting()
+        {
+            lbfr.Text = Properties.Settings.Default.FR;
+            lbt.Text = Properties.Settings.Default.T;
+        }
+        public void SaveSetting()
+        {
+            Properties.Settings.Default.FR = txtfr.Text;
+            Properties.Settings.Default.T = txtt.Text;
+            
+
+            Properties.Settings.Default.Save();
         }
     }
 }
