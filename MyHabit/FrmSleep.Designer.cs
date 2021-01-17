@@ -30,6 +30,7 @@ namespace MyHabit
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmSleep));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -37,6 +38,7 @@ namespace MyHabit
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.listRingtone = new System.Windows.Forms.ListBox();
             this.btnSetAlarm = new System.Windows.Forms.Button();
             this.richtxtMesaage = new System.Windows.Forms.RichTextBox();
@@ -50,7 +52,16 @@ namespace MyHabit
             this.txtketqua = new System.Windows.Forms.TextBox();
             this.btntinh = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.lbt = new System.Windows.Forms.Label();
+            this.lbfr = new System.Windows.Forms.Label();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.btnHome = new System.Windows.Forms.Button();
+            this.txtfr = new System.Windows.Forms.TextBox();
+            this.txtt = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -128,6 +139,16 @@ namespace MyHabit
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Set Alarm";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(120, 60);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(39, 13);
+            this.label8.TabIndex = 11;
+            this.label8.Text = "Minute";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // listRingtone
             // 
@@ -233,21 +254,120 @@ namespace MyHabit
             this.label7.TabIndex = 11;
             this.label7.Text = "Second";
             // 
-            // label8
+            // label9
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(120, 60);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(39, 13);
-            this.label8.TabIndex = 11;
-            this.label8.Text = "Minute";
-            this.label8.Click += new System.EventHandler(this.label8_Click);
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(36, 356);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(33, 13);
+            this.label9.TabIndex = 12;
+            this.label9.Text = "From:";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(160, 356);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(23, 13);
+            this.label10.TabIndex = 12;
+            this.label10.Text = "To:";
+            this.label10.Click += new System.EventHandler(this.label10_Click);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(436, 44);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(23, 13);
+            this.label11.TabIndex = 12;
+            this.label11.Text = "To:";
+            this.label11.Click += new System.EventHandler(this.label11_Click);
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(436, 11);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(33, 13);
+            this.label13.TabIndex = 12;
+            this.label13.Text = "From:";
+            this.label13.Click += new System.EventHandler(this.label13_Click);
+            // 
+            // lbt
+            // 
+            this.lbt.AutoSize = true;
+            this.lbt.Location = new System.Drawing.Point(477, 44);
+            this.lbt.Name = "lbt";
+            this.lbt.Size = new System.Drawing.Size(10, 13);
+            this.lbt.TabIndex = 12;
+            this.lbt.Text = ".";
+            this.lbt.Click += new System.EventHandler(this.label11_Click);
+            // 
+            // lbfr
+            // 
+            this.lbfr.AutoSize = true;
+            this.lbfr.Location = new System.Drawing.Point(477, 11);
+            this.lbfr.Name = "lbfr";
+            this.lbfr.Size = new System.Drawing.Size(10, 13);
+            this.lbfr.TabIndex = 12;
+            this.lbfr.Text = ".";
+            this.lbfr.Click += new System.EventHandler(this.label13_Click);
+            // 
+            // btnSave
+            // 
+            this.btnSave.Location = new System.Drawing.Point(108, 397);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(75, 23);
+            this.btnSave.TabIndex = 13;
+            this.btnSave.Text = "Lưu";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // btnHome
+            // 
+            this.btnHome.BackColor = System.Drawing.Color.Transparent;
+            this.btnHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHome.Image = ((System.Drawing.Image)(resources.GetObject("btnHome.Image")));
+            this.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHome.Location = new System.Drawing.Point(421, 383);
+            this.btnHome.Margin = new System.Windows.Forms.Padding(2);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.Size = new System.Drawing.Size(120, 45);
+            this.btnHome.TabIndex = 14;
+            this.btnHome.Text = "Home";
+            this.btnHome.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnHome.UseVisualStyleBackColor = false;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
+            // 
+            // txtfr
+            // 
+            this.txtfr.Location = new System.Drawing.Point(71, 353);
+            this.txtfr.Name = "txtfr";
+            this.txtfr.Size = new System.Drawing.Size(67, 20);
+            this.txtfr.TabIndex = 15;
+            // 
+            // txtt
+            // 
+            this.txtt.Location = new System.Drawing.Point(189, 353);
+            this.txtt.Name = "txtt";
+            this.txtt.Size = new System.Drawing.Size(67, 20);
+            this.txtt.TabIndex = 15;
             // 
             // FrmSleep
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(540, 345);
+            this.ClientSize = new System.Drawing.Size(540, 432);
+            this.Controls.Add(this.txtt);
+            this.Controls.Add(this.txtfr);
+            this.Controls.Add(this.btnHome);
+            this.Controls.Add(this.btnSave);
+            this.Controls.Add(this.lbfr);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.lbt);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.btntinh);
             this.Controls.Add(this.txtketqua);
@@ -289,5 +409,15 @@ namespace MyHabit
         private System.Windows.Forms.Button btntinh;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label lbt;
+        private System.Windows.Forms.Label lbfr;
+        private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Button btnHome;
+        private System.Windows.Forms.TextBox txtfr;
+        private System.Windows.Forms.TextBox txtt;
     }
 }

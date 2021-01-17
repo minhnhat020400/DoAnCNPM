@@ -31,46 +31,21 @@ namespace MyHabit
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmDrink));
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.buoiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.mililitDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.revenueBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.data1 = new MyHabit.Data1();
-            this.pieChart1 = new LiveCharts.WinForms.PieChart();
-            this.button1 = new System.Windows.Forms.Button();
             this.data1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtNuoc = new System.Windows.Forms.TextBox();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lbml = new System.Windows.Forms.Label();
+            this.btnHome = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.revenueBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.data1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.data1BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // dataGridView2
-            // 
-            this.dataGridView2.AutoGenerateColumns = false;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.buoiDataGridViewTextBoxColumn,
-            this.mililitDataGridViewTextBoxColumn});
-            this.dataGridView2.DataSource = this.revenueBindingSource;
-            this.dataGridView2.Location = new System.Drawing.Point(547, 12);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(241, 150);
-            this.dataGridView2.TabIndex = 1;
-            // 
-            // buoiDataGridViewTextBoxColumn
-            // 
-            this.buoiDataGridViewTextBoxColumn.DataPropertyName = "Buoi";
-            this.buoiDataGridViewTextBoxColumn.HeaderText = "Buoi";
-            this.buoiDataGridViewTextBoxColumn.Name = "buoiDataGridViewTextBoxColumn";
-            // 
-            // mililitDataGridViewTextBoxColumn
-            // 
-            this.mililitDataGridViewTextBoxColumn.DataPropertyName = "Mililit";
-            this.mililitDataGridViewTextBoxColumn.HeaderText = "Mililit";
-            this.mililitDataGridViewTextBoxColumn.Name = "mililitDataGridViewTextBoxColumn";
             // 
             // revenueBindingSource
             // 
@@ -81,26 +56,6 @@ namespace MyHabit
             // 
             this.data1.DataSetName = "Data1";
             this.data1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // pieChart1
-            // 
-            this.pieChart1.BackColor = System.Drawing.Color.Transparent;
-            this.pieChart1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pieChart1.BackgroundImage")));
-            this.pieChart1.Location = new System.Drawing.Point(494, 228);
-            this.pieChart1.Name = "pieChart1";
-            this.pieChart1.Size = new System.Drawing.Size(306, 223);
-            this.pieChart1.TabIndex = 2;
-            this.pieChart1.Text = "pieChart1";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(632, 180);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(74, 25);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Load";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // data1BindingSource
             // 
@@ -118,6 +73,67 @@ namespace MyHabit
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(561, 32);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(214, 28);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Nhập Mililit Nước";
+            // 
+            // txtNuoc
+            // 
+            this.txtNuoc.Location = new System.Drawing.Point(605, 88);
+            this.txtNuoc.Name = "txtNuoc";
+            this.txtNuoc.Size = new System.Drawing.Size(122, 20);
+            this.txtNuoc.TabIndex = 6;
+            // 
+            // btnSave
+            // 
+            this.btnSave.Location = new System.Drawing.Point(623, 142);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(75, 23);
+            this.btnSave.TabIndex = 7;
+            this.btnSave.Text = "Lưu";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(695, 258);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(32, 13);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "Mililit:";
+            // 
+            // lbml
+            // 
+            this.lbml.AutoSize = true;
+            this.lbml.Location = new System.Drawing.Point(733, 258);
+            this.lbml.Name = "lbml";
+            this.lbml.Size = new System.Drawing.Size(10, 13);
+            this.lbml.TabIndex = 8;
+            this.lbml.Text = ".";
+            // 
+            // btnHome
+            // 
+            this.btnHome.BackColor = System.Drawing.Color.Transparent;
+            this.btnHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHome.Image = ((System.Drawing.Image)(resources.GetObject("btnHome.Image")));
+            this.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHome.Location = new System.Drawing.Point(680, 406);
+            this.btnHome.Margin = new System.Windows.Forms.Padding(2);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.Size = new System.Drawing.Size(120, 45);
+            this.btnHome.TabIndex = 14;
+            this.btnHome.Text = "Home";
+            this.btnHome.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnHome.UseVisualStyleBackColor = false;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
+            // 
             // FrmDrink
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -125,32 +141,35 @@ namespace MyHabit
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnHome);
+            this.Controls.Add(this.lbml);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.btnSave);
+            this.Controls.Add(this.txtNuoc);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.pieChart1);
-            this.Controls.Add(this.dataGridView2);
             this.Name = "FrmDrink";
             this.Text = "FrmDrink";
             this.Load += new System.EventHandler(this.FrmDrink_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.revenueBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.data1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.data1BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dataGridView2;
-        private LiveCharts.WinForms.PieChart pieChart1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn buoiDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn mililitDataGridViewTextBoxColumn;
         private System.Windows.Forms.BindingSource revenueBindingSource;
         private Data1 data1;
         private System.Windows.Forms.BindingSource data1BindingSource;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtNuoc;
+        private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lbml;
+        private System.Windows.Forms.Button btnHome;
     }
 }

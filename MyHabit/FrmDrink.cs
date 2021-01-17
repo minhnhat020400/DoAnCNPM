@@ -21,15 +21,35 @@ namespace MyHabit
         Func<ChartPoint, string> labelPoint = chartpoint => string.Format("{0} ({1:P})", chartpoint.Y, chartpoint.Participation);
         private void button1_Click(object sender, EventArgs e)
         {
-            SeriesCollection series = new SeriesCollection();
-            foreach (var obj in data1.Revenue)
-                series.Add(new PieSeries() { Title = obj.Buoi.ToString(), Values = new ChartValues<int> { obj.Mililit }, DataLabels = true, LabelPoint = labelPoint });
-            pieChart1.Series = series;
+            
         }
 
         private void FrmDrink_Load(object sender, EventArgs e)
         {
-            pieChart1.LegendLocation = LegendLocation.Bottom;
+            GetSetting();
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            SaveSetting()
+        }
+        public void GetSetting()
+        {
+            lbml.Text = Properties.Settings.Default.Calo1.ToString();
+        }
+        public void SaveSetting()
+        {
+            Properties.Settings.Default.ML = Convert.ToInt32(txtNuoc.Text);
+            
+
+            Properties.Settings.Default.Save();
+        }
+
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            FrmMain frm = new FrmMain();
+            this.Hide();
+            frm.ShowDialog();
         }
     }
 }

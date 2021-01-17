@@ -133,3 +133,6 @@ D:\code\MyHabit\obj\Debug\MyHabit.csproj.CoreCompileInputs.cache
 D:\code\MyHabit\obj\Debug\MyHabit.csproj.CopyComplete
 D:\code\MyHabit\obj\Debug\MyHabit.exe
 D:\code\MyHabit\obj\Debug\MyHabit.pdb
+D:\code\MyHabit\bin\Debug\System.Net.Http.Extensions.dll
+D:\code\MyHabit\bin\Debug\System.Net.Http.Formatting.dll
+D:\code\MyHabit\bin\Debug\System.Net.Http.Primitives.dll
