@@ -219,7 +219,7 @@ namespace MyHabit
             this.btChagePass.Name = "btChagePass";
             this.btChagePass.Size = new System.Drawing.Size(131, 46);
             this.btChagePass.TabIndex = 14;
-            this.btChagePass.Text = "Đổi Mật Khẩu";
+            this.btChagePass.Text = "quên mật khẩu";
             this.btChagePass.UseVisualStyleBackColor = false;
             this.btChagePass.Click += new System.EventHandler(this.btChagePass_Click);
             // 

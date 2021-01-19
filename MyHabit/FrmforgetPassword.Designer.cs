@@ -1,7 +1,7 @@
 ﻿
 namespace MyHabit
 {
-    partial class FrmChagePassWord
+    partial class FrmforgetPassword
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace MyHabit
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmChagePassWord));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmforgetPassword));
             this.btBack = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
@@ -106,7 +106,7 @@ namespace MyHabit
             this.tbRePass.PasswordChar = '*';
             this.tbRePass.Size = new System.Drawing.Size(348, 37);
             this.tbRePass.TabIndex = 19;
-            this.tbRePass.Text = "1";
+            this.tbRePass.Text = "11111";
             // 
             // pictureBox5
             // 
@@ -141,7 +141,7 @@ namespace MyHabit
             this.tbPass.PasswordChar = '*';
             this.tbPass.Size = new System.Drawing.Size(348, 37);
             this.tbPass.TabIndex = 16;
-            this.tbPass.Text = "1";
+            this.tbPass.Text = "11111";
             // 
             // pictureBox4
             // 
@@ -175,7 +175,7 @@ namespace MyHabit
             this.tbName.Name = "tbName";
             this.tbName.Size = new System.Drawing.Size(348, 37);
             this.tbName.TabIndex = 13;
-            this.tbName.Text = "trang";
+            this.tbName.Text = "trangngu1@gmail.com";
             // 
             // pictureBox3
             // 
@@ -195,9 +195,9 @@ namespace MyHabit
             this.label2.Location = new System.Drawing.Point(102, 148);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(116, 23);
+            this.label2.Size = new System.Drawing.Size(69, 23);
             this.label2.TabIndex = 7;
-            this.label2.Text = "User name";
+            this.label2.Text = "Email";
             // 
             // pictureBox2
             // 
@@ -224,7 +224,7 @@ namespace MyHabit
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
-            // FrmChagePassWord
+            // FrmforgetPassword
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -233,7 +233,7 @@ namespace MyHabit
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Name = "FrmChagePassWord";
+            this.Name = "FrmforgetPassword";
             this.Text = "Đổi Mật Khẩu";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
