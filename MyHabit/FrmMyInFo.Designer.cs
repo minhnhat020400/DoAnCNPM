@@ -46,7 +46,8 @@ namespace MyHabit
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnHome = new System.Windows.Forms.Button();
             this.tbCanNang = new System.Windows.Forms.TextBox();
-            this.cbGioiTinh = new System.Windows.Forms.ComboBox();
+            this.tickNam = new System.Windows.Forms.CheckBox();
+            this.tickNu = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -75,7 +76,6 @@ namespace MyHabit
             this.label1.TabIndex = 7;
             this.label1.Text = "        Chiều cao";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -90,7 +90,6 @@ namespace MyHabit
             this.label2.TabIndex = 7;
             this.label2.Text = "        Cân nặng";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label2.Click += new System.EventHandler(this.label1_Click);
             // 
             // label3
             // 
@@ -105,7 +104,6 @@ namespace MyHabit
             this.label3.TabIndex = 7;
             this.label3.Text = "        Ngày sinh";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label3.Click += new System.EventHandler(this.label1_Click);
             // 
             // label4
             // 
@@ -120,7 +118,6 @@ namespace MyHabit
             this.label4.TabIndex = 7;
             this.label4.Text = "        Giới tính";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label4.Click += new System.EventHandler(this.label1_Click);
             // 
             // label5
             // 
@@ -135,7 +132,6 @@ namespace MyHabit
             this.label5.TabIndex = 7;
             this.label5.Text = "        Số điện thoại";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label5.Click += new System.EventHandler(this.label1_Click);
             // 
             // label6
             // 
@@ -150,7 +146,6 @@ namespace MyHabit
             this.label6.TabIndex = 7;
             this.label6.Text = "        Địa chỉ";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label6.Click += new System.EventHandler(this.label1_Click);
             // 
             // dateTimePicker1
             // 
@@ -160,7 +155,6 @@ namespace MyHabit
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(265, 22);
             this.dateTimePicker1.TabIndex = 8;
-            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // tbChieuCao
             // 
@@ -248,21 +242,36 @@ namespace MyHabit
             this.tbCanNang.Size = new System.Drawing.Size(228, 40);
             this.tbCanNang.TabIndex = 13;
             // 
-            // cbGioiTinh
+            // tickNam
             // 
-            this.cbGioiTinh.FormattingEnabled = true;
-            this.cbGioiTinh.Location = new System.Drawing.Point(520, 188);
-            this.cbGioiTinh.Name = "cbGioiTinh";
-            this.cbGioiTinh.Size = new System.Drawing.Size(140, 24);
-            this.cbGioiTinh.TabIndex = 14;
+            this.tickNam.AutoSize = true;
+            this.tickNam.Location = new System.Drawing.Point(508, 188);
+            this.tickNam.Name = "tickNam";
+            this.tickNam.Size = new System.Drawing.Size(65, 21);
+            this.tickNam.TabIndex = 14;
+            this.tickNam.Text = "  nam";
+            this.tickNam.UseVisualStyleBackColor = true;
+            this.tickNam.CheckedChanged += new System.EventHandler(this.tickNam_CheckedChanged);
+            // 
+            // tickNu
+            // 
+            this.tickNu.AutoSize = true;
+            this.tickNu.Location = new System.Drawing.Point(592, 188);
+            this.tickNu.Name = "tickNu";
+            this.tickNu.Size = new System.Drawing.Size(46, 21);
+            this.tickNu.TabIndex = 15;
+            this.tickNu.Text = "nữ";
+            this.tickNu.UseVisualStyleBackColor = true;
+            this.tickNu.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
             // 
             // FrmMyInFo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1067, 590);
-            this.Controls.Add(this.cbGioiTinh);
+            this.ClientSize = new System.Drawing.Size(1083, 590);
+            this.Controls.Add(this.tickNu);
+            this.Controls.Add(this.tickNam);
             this.Controls.Add(this.tbCanNang);
             this.Controls.Add(this.btnHome);
             this.Controls.Add(this.pictureBox2);
@@ -284,7 +293,6 @@ namespace MyHabit
             this.Name = "FrmMyInFo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmMy";
-            this.Load += new System.EventHandler(this.FrmMyInFo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
@@ -310,6 +318,7 @@ namespace MyHabit
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button btnHome;
         private System.Windows.Forms.TextBox tbCanNang;
-        private System.Windows.Forms.ComboBox cbGioiTinh;
+        private System.Windows.Forms.CheckBox tickNam;
+        private System.Windows.Forms.CheckBox tickNu;
     }
 }

@@ -138,6 +138,7 @@ namespace MyHabit
         private void btChagePass_Click(object sender, EventArgs e)
         {
             FrmforgetPassword frmChagePassWord = new FrmforgetPassword();
+            this.Hide();
             frmChagePassWord.ShowDialog();
         }
 

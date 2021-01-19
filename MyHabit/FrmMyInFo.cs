@@ -17,16 +17,6 @@ namespace MyHabit
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void pictureBox2_Click(object sender, EventArgs e)
         {
 
@@ -49,7 +39,7 @@ namespace MyHabit
             if (!trya || !tryb)
 
             {
-                if (tbChieuCao.Text == "" || tbChieuCao.Text == "" || tbSoDienThoai.Text =="" || cbGioiTinh.Text== "")
+                if (tbChieuCao.Text == "" || tbChieuCao.Text == "" || tbSoDienThoai.Text =="" )
                 {
                     MessageBox.Show("Hay Nhận Đủ thông tin", "sai định dạnh", MessageBoxButtons.OK);
                     return false;
@@ -69,24 +59,14 @@ namespace MyHabit
                 return true;
             }
         }
-        private void addCBox()
-        {
-            cbGioiTinh.Items.Add("Nam");
-            cbGioiTinh.Items.Add("Nữ");
-            
-        }
+
         private void btSave_Click(object sender, EventArgs e)
         {
             if (check_number())
             {
-                luuthongtin(tbCanNang.Text, tbChieuCao.Text, dateTimePicker1.Value,cbGioiTinh.Text, tbSoDienThoai.Text, tbDiaChi.Text);
+                luuthongtin(tbCanNang.Text, tbChieuCao.Text, dateTimePicker1.Value, tbSoDienThoai.Text, tbDiaChi.Text);
             }
 
-        }
-
-        private void FrmMyInFo_Load(object sender, EventArgs e)
-        {
-            addCBox();
         }
         private void checkSDT()
         {
@@ -106,9 +86,25 @@ namespace MyHabit
         {
             
         }
-        private void luuthongtin(string CanNang, string chieuCao, DateTime  ngaySinh, string gt, string sdt, string diachi)
+        private void luuthongtin(string CanNang, string chieuCao, DateTime  ngaySinh,string sdt, string diachi)
         {
             MessageBox.Show(" cc", "Sai định dạng");
+        }
+
+        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (tickNu.Checked == true)
+            {
+                tickNam.Checked = false;
+            }
+        }
+
+        private void tickNam_CheckedChanged(object sender, EventArgs e)
+        {
+            if (tickNam.Checked == true)
+            {
+                tickNu.Checked = false;
+            }
         }
     }
 }

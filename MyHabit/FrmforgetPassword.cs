@@ -21,7 +21,7 @@ namespace MyHabit
         }
         static string mess1;
         static string mess2;
-        public static async Task<String> PostTK(string mail, string pass)
+        public static async Task<String> PostCTK(string mail, string pass)
         {
             HttpClient client = new HttpClient();
             client.BaseAddress = new Uri("http://61.14.233.182");
@@ -77,10 +77,9 @@ namespace MyHabit
             else return true;
         }
 
-        private async void button2_Click(object sender, EventArgs e)
+        private async void Button2_Click(object sender, EventArgs e)
         {
-            var token = PostTK(tbName.Text, tbPass.Text);
-            
+            var token = await PostCTK(tbName.Text, tbPass.Text);
             if (checkThongTin() == true && token!= null)
             {
                 MessageBox.Show(mess1);
@@ -93,7 +92,7 @@ namespace MyHabit
         {
             FrmLogin frmLogin = new FrmLogin();
             this.Hide();
-            frmLogin.ShowDialog();
+            frmLogin.Show();
         }
     }
 }
