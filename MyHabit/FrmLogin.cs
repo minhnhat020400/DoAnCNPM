@@ -71,13 +71,6 @@ namespace MyHabit
             InitializeComponent();
         }
 
-        private void FrmLogin_Load(object sender, EventArgs e)
-        {
-            // this.TopMost = true;
-            // this.FormBorderStyle = FormBorderStyle.None;
-            //this.WindowState = FormWindowState.Maximized;
-        }
-
         private async void btGetIn_Click(object sender, EventArgs e)
         {
             var Token = await test(txtName.Text, txtPass.Text);
@@ -147,5 +140,13 @@ namespace MyHabit
             FrmChagePassWord frmChagePassWord = new FrmChagePassWord();
             frmChagePassWord.ShowDialog();
         }
+
+        private void FrmLogin_Load(object sender, EventArgs e)
+        {
+            // this.TopMost = true;
+            // this.FormBorderStyle = FormBorderStyle.None;
+            //this.WindowState = FormWindowState.Maximized;
+        }
+
     }
 }
