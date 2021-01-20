@@ -15,7 +15,7 @@ namespace MyHabit
     public partial class FrmLogin : Form
     {
         static HttpClient client = new HttpClient();
-        public string Token;
+        public static string TokenMess;
         public class Login
         {
             public string userName { get; set; }
@@ -57,6 +57,7 @@ namespace MyHabit
                 // nếu server trả về 1 chuổi thì mình dùng như cách bên dưới
                 // server trả về một đối tượng thì dùng await response.Content.ReadAsAsync<Doi tuong>()
                 var token = await response.Content.ReadAsStringAsync();
+                TokenMess = token.ToString();
                 return token;
             }
             else

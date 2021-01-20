@@ -1,9 +1,12 @@
-﻿using System;
+﻿using MyHabit.DTO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -15,12 +18,58 @@ namespace MyHabit
         public FrmMyInFo()
         {
             InitializeComponent();
+            chatSet();
         }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
+        static string token = FrmLogin.TokenMess;
+        static string mess1;
+        static string mess2;
+        public static async Task<String> PutINfo(string date, string mail, string fn, int hei, string lastn, bool s, int wei)
         {
+            HttpClient client = new HttpClient();
+            client.BaseAddress = new Uri("http://61.14.233.182");
+            client.DefaultRequestHeaders.Accept.Clear();
+            client.DefaultRequestHeaders.Accept.Add(
+                new MediaTypeWithQualityHeaderValue("application/json"));
+            // bật cái dưới khi gọi api khác trừ login register forget password
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
 
+            // Link api
+            String apiUrl = "/api/user/update-user-profile";
+
+            // Model  để gửi dữ liệu lên server
+            Info info = new Info();
+            info.email = mail;
+            info.dateOfBirth = date;
+            info.firstName = fn;
+            info.height = hei;
+            info.lastName = lastn;
+            info.sex = s;
+            info.weight = wei;
+
+
+            // POST dùng postAsJsonAsync có body
+            // Get dùng GetAsync ko có body
+            // PUT dùng PutAsJsonAsync có body
+            // Delete dùng DeleteAsync ko có body
+            HttpResponseMessage response = await client.PutAsJsonAsync(apiUrl, info); // login là body của api
+
+            // Kiểm tra api có thành công hay ko
+            if (response.IsSuccessStatusCode)
+            {
+                // nếu server trả về 1 chuổi thì mình dùng như cách bên dưới
+                // server trả về một đối tượng thì dùng await response.Content.ReadAsAsync<Doi tuong>()
+                var token = await response.Content.ReadAsStringAsync();
+                mess1 = token;
+                return token;
+            }
+            else
+            {
+                var token = await response.Content.ReadAsStringAsync();
+                mess2 = token;
+                return null;
+            }
         }
+
 
         private void btnHome_Click(object sender, EventArgs e)
         {
@@ -39,7 +88,7 @@ namespace MyHabit
             if (!trya || !tryb)
 
             {
-                if (tbChieuCao.Text == "" || tbChieuCao.Text == "" || tbSoDienThoai.Text =="" )
+                if (tbChieuCao.Text == "" || tbChieuCao.Text == ""  )
                 {
                     MessageBox.Show("Hay Nhận Đủ thông tin", "sai định dạnh", MessageBoxButtons.OK);
                     return false;
@@ -59,36 +108,30 @@ namespace MyHabit
                 return true;
             }
         }
-
-        private void btSave_Click(object sender, EventArgs e)
+        bool chatSet()
         {
-            if (check_number())
+            if (tickNam.Checked == true)
             {
-                luuthongtin(tbCanNang.Text, tbChieuCao.Text, dateTimePicker1.Value, tbSoDienThoai.Text, tbDiaChi.Text);
+                return true;
             }
-
-        }
-        private void checkSDT()
-        {
-            float a;
-            bool trya = float.TryParse(tbSoDienThoai.Text, out a);
-            if (!trya)
+            else if (tickNu.Checked == true)
             {
-                MessageBox.Show("số điện thoại không được có chữ", "Sai định dạng");
-                tbSoDienThoai.Text = "";
+                return false;
             }
-            else{
-                tbSoDienThoai.Text = a.ToString();
+            else
+                return true;
+        
+        }
+        private async void btSave_Click(object sender, EventArgs e)
+        {
+            int h = int.Parse(tbChieuCao.Text);
+            int w = int.Parse(tbCanNang.Text);
+            var token = await PutINfo(dateTimePicker1.Value.ToString("dd/MM/yyyy"),tbDiaChi.Text,tbTen.Text,h,tbTen.Text,chatSet(),int.Parse(tbCanNang.Text)  );
+            if (check_number() && token != null)
+            {
+                MessageBox.Show(mess1);
             }
-
-        }
-        private void tbSoDienThoai_TextChanged(object sender, EventArgs e)
-        {
-            
-        }
-        private void luuthongtin(string CanNang, string chieuCao, DateTime  ngaySinh,string sdt, string diachi)
-        {
-            MessageBox.Show(" cc", "Sai định dạng");
+            else MessageBox.Show(mess2);
         }
 
         private void checkBox2_CheckedChanged(object sender, EventArgs e)

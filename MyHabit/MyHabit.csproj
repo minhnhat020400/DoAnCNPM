@@ -111,6 +111,7 @@
   <ItemGroup>
     <Compile Include="DTO\Acount.cs" />
     <Compile Include="DTO\ChangeAcc.cs" />
+    <Compile Include="DTO\Info.cs" />
     <Compile Include="FrmforgetPassword.cs">
       <SubType>Form</SubType>
     </Compile>
