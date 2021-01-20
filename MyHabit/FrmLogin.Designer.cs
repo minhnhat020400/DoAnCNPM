@@ -41,11 +41,12 @@ namespace MyHabit
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtName = new System.Windows.Forms.TextBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtPass = new System.Windows.Forms.TextBox();
             this.backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
             this.backgroundWorker3 = new System.ComponentModel.BackgroundWorker();
+            this.btChagePass = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -58,19 +59,20 @@ namespace MyHabit
             this.btCreateAcc.BackColor = System.Drawing.Color.Black;
             this.btCreateAcc.ForeColor = System.Drawing.Color.White;
             this.btCreateAcc.Location = new System.Drawing.Point(581, 324);
-            this.btCreateAcc.Margin = new System.Windows.Forms.Padding(2);
+            this.btCreateAcc.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btCreateAcc.Name = "btCreateAcc";
             this.btCreateAcc.Size = new System.Drawing.Size(98, 37);
             this.btCreateAcc.TabIndex = 1;
             this.btCreateAcc.Text = "Tạo tài khoản";
             this.btCreateAcc.UseVisualStyleBackColor = false;
+            this.btCreateAcc.Click += new System.EventHandler(this.btCreateAcc_Click);
             // 
             // btnOut
             // 
             this.btnOut.BackColor = System.Drawing.Color.Black;
             this.btnOut.ForeColor = System.Drawing.Color.Transparent;
-            this.btnOut.Location = new System.Drawing.Point(508, 394);
-            this.btnOut.Margin = new System.Windows.Forms.Padding(2);
+            this.btnOut.Location = new System.Drawing.Point(455, 395);
+            this.btnOut.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnOut.Name = "btnOut";
             this.btnOut.Size = new System.Drawing.Size(98, 37);
             this.btnOut.TabIndex = 3;
@@ -83,7 +85,7 @@ namespace MyHabit
             this.btGetIn.BackColor = System.Drawing.Color.Black;
             this.btGetIn.ForeColor = System.Drawing.Color.Transparent;
             this.btGetIn.Location = new System.Drawing.Point(455, 324);
-            this.btGetIn.Margin = new System.Windows.Forms.Padding(2);
+            this.btGetIn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btGetIn.Name = "btGetIn";
             this.btGetIn.Size = new System.Drawing.Size(87, 37);
             this.btGetIn.TabIndex = 0;
@@ -164,17 +166,17 @@ namespace MyHabit
             this.pictureBox3.TabIndex = 11;
             this.pictureBox3.TabStop = false;
             // 
-            // textBox3
+            // txtName
             // 
-            this.textBox3.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(443, 177);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(262, 31);
-            this.textBox3.TabIndex = 12;
-            this.textBox3.Text = "trang";
+            this.txtName.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtName.Location = new System.Drawing.Point(443, 177);
+            this.txtName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtName.Multiline = true;
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(262, 31);
+            this.txtName.TabIndex = 12;
+            this.txtName.Text = "trang";
             // 
             // pictureBox4
             // 
@@ -186,19 +188,32 @@ namespace MyHabit
             this.pictureBox4.TabIndex = 11;
             this.pictureBox4.TabStop = false;
             // 
-            // textBox4
+            // txtPass
             // 
-            this.textBox4.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.ForeColor = System.Drawing.Color.Black;
-            this.textBox4.Location = new System.Drawing.Point(443, 258);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.PasswordChar = '*';
-            this.textBox4.Size = new System.Drawing.Size(262, 33);
-            this.textBox4.TabIndex = 13;
-            this.textBox4.Text = "1";
+            this.txtPass.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPass.ForeColor = System.Drawing.Color.Black;
+            this.txtPass.Location = new System.Drawing.Point(443, 258);
+            this.txtPass.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPass.Multiline = true;
+            this.txtPass.Name = "txtPass";
+            this.txtPass.PasswordChar = '*';
+            this.txtPass.Size = new System.Drawing.Size(262, 33);
+            this.txtPass.TabIndex = 13;
+            this.txtPass.Text = "1";
+            // 
+            // btChagePass
+            // 
+            this.btChagePass.BackColor = System.Drawing.Color.Black;
+            this.btChagePass.ForeColor = System.Drawing.Color.White;
+            this.btChagePass.Location = new System.Drawing.Point(581, 395);
+            this.btChagePass.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btChagePass.Name = "btChagePass";
+            this.btChagePass.Size = new System.Drawing.Size(98, 37);
+            this.btChagePass.TabIndex = 14;
+            this.btChagePass.Text = "Đổi Mật Khẩu";
+            this.btChagePass.UseVisualStyleBackColor = false;
+            this.btChagePass.Click += new System.EventHandler(this.btChagePass_Click);
             // 
             // FrmLogin
             // 
@@ -207,8 +222,9 @@ namespace MyHabit
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(746, 532);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.btChagePass);
+            this.Controls.Add(this.txtPass);
+            this.Controls.Add(this.txtName);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.btCreateAcc);
@@ -219,7 +235,8 @@ namespace MyHabit
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.IsMdiContainer = true;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FrmLogin";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -247,11 +264,12 @@ namespace MyHabit
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtPass;
         private System.ComponentModel.BackgroundWorker backgroundWorker2;
         private System.ComponentModel.BackgroundWorker backgroundWorker3;
+        private System.Windows.Forms.Button btChagePass;
     }
 }
 
