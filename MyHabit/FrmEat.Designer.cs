@@ -32,7 +32,7 @@ namespace MyHabit
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmEat));
             this.revenueBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.data = new MyHabit.Data();
+  //          this.data = new MyHabit.Data();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -50,19 +50,19 @@ namespace MyHabit
             this.BtnSave = new System.Windows.Forms.Button();
             this.btnHome = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.revenueBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.data)).BeginInit();
+     //       ((System.ComponentModel.ISupportInitialize)(this.data)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // revenueBindingSource
             // 
             this.revenueBindingSource.DataMember = "Revenue";
-            this.revenueBindingSource.DataSource = this.data;
+//            this.revenueBindingSource.DataSource = this.data;
             // 
             // data
             // 
-            this.data.DataSetName = "Data";
-            this.data.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+ //           this.data.DataSetName = "Data";
+ //           this.data.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // pictureBox1
             // 
@@ -238,7 +238,7 @@ namespace MyHabit
             this.Text = "Ăn";
             this.Load += new System.EventHandler(this.Eat_Load);
             ((System.ComponentModel.ISupportInitialize)(this.revenueBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.data)).EndInit();
+ //           ((System.ComponentModel.ISupportInitialize)(this.data)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -247,7 +247,7 @@ namespace MyHabit
 
         #endregion
         private System.Windows.Forms.BindingSource revenueBindingSource;
-        private Data data;
+  //      private Data data;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;

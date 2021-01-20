@@ -33,6 +33,9 @@ namespace MyHabit
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.tbmail = new System.Windows.Forms.TextBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.btBack = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.tbRePass = new System.Windows.Forms.TextBox();
@@ -47,6 +50,7 @@ namespace MyHabit
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -79,6 +83,10 @@ namespace MyHabit
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.panel1.Controls.Add(this.tbmail);
+            this.panel1.Controls.Add(this.pictureBox6);
+            this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.btBack);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.tbRePass);
@@ -95,6 +103,40 @@ namespace MyHabit
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(503, 576);
             this.panel1.TabIndex = 3;
+            // 
+            // tbmail
+            // 
+            this.tbmail.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tbmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbmail.Location = new System.Drawing.Point(106, 89);
+            this.tbmail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbmail.Multiline = true;
+            this.tbmail.Name = "tbmail";
+            this.tbmail.Size = new System.Drawing.Size(348, 37);
+            this.tbmail.TabIndex = 25;
+            this.tbmail.Text = "trangngu1@gmail.com";
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.Location = new System.Drawing.Point(90, 73);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(375, 72);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 24;
+            this.pictureBox6.TabStop = false;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Century", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(102, 46);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(69, 23);
+            this.label4.TabIndex = 23;
+            this.label4.Text = "Email";
             // 
             // btBack
             // 
@@ -131,7 +173,7 @@ namespace MyHabit
             this.tbRePass.PasswordChar = '*';
             this.tbRePass.Size = new System.Drawing.Size(348, 37);
             this.tbRePass.TabIndex = 19;
-            this.tbRePass.Text = "1";
+            this.tbRePass.Text = "11111";
             // 
             // pictureBox5
             // 
@@ -166,7 +208,7 @@ namespace MyHabit
             this.tbPass.PasswordChar = '*';
             this.tbPass.Size = new System.Drawing.Size(348, 37);
             this.tbPass.TabIndex = 16;
-            this.tbPass.Text = "1";
+            this.tbPass.Text = "11111";
             // 
             // pictureBox4
             // 
@@ -200,7 +242,7 @@ namespace MyHabit
             this.tbName.Name = "tbName";
             this.tbName.Size = new System.Drawing.Size(348, 37);
             this.tbName.TabIndex = 13;
-            this.tbName.Text = "trang";
+            this.tbName.Text = "trang1";
             // 
             // pictureBox3
             // 
@@ -238,6 +280,7 @@ namespace MyHabit
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -261,5 +304,8 @@ namespace MyHabit
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btBack;
+        private System.Windows.Forms.TextBox tbmail;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.Label label4;
     }
 }
