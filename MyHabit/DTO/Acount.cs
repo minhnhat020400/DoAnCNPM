@@ -15,5 +15,6 @@ namespace MyHabit.DTO
         public string email { get => mail; set => mail = value; }
         public string name { get => n; set => n = value; }
         public string password { get => p; set => p = value; }
+
     }
 }

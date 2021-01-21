@@ -8,12 +8,10 @@ namespace MyHabit.DTO
 {
     public class CaloTuan
     {
-        int valo;
+        string valo;
         string vreateAt;
 
-        public int calo { get => valo; set => valo = value; }
-        public string createAt { get => vreateAt; set => vreateAt = value; }
-
-        
+        public string total { get => valo; set => valo = value; }
+        public string createAt { get => vreateAt; set => vreateAt = value; }   
     }
 }
