@@ -116,14 +116,10 @@ D:\code\MyHabit\bin\Debug\LiveCharts.Wpf.xml
 D:\code\MyHabit\obj\Debug\MyHabit.csprojAssemblyReference.cache
 D:\code\MyHabit\obj\Debug\MyHabit.FrmChagePassWord.resources
 D:\code\MyHabit\obj\Debug\MyHabit.FrmCreateAccount.resources
-D:\code\MyHabit\obj\Debug\MyHabit.FrmDrink.resources
-D:\code\MyHabit\obj\Debug\MyHabit.FrmEat.resources
 D:\code\MyHabit\obj\Debug\MyHabit.FrmCheck.resources
 D:\code\MyHabit\obj\Debug\MyHabit.FormThongKetuan.resources
 D:\code\MyHabit\obj\Debug\MyHabit.FrmBMI.resources
 D:\code\MyHabit\obj\Debug\MyHabit.FrmMain.resources
-D:\code\MyHabit\obj\Debug\MyHabit.FrmSleep.resources
-D:\code\MyHabit\obj\Debug\MyHabit.FrmToMo.resources
 D:\code\MyHabit\obj\Debug\MyHabit.FrmLogin.resources
 D:\code\MyHabit\obj\Debug\MyHabit.FrmMyInFo.resources
 D:\code\MyHabit\obj\Debug\MyHabit.Properties.Resources.resources
@@ -136,3 +132,4 @@ D:\code\MyHabit\obj\Debug\MyHabit.pdb
 D:\code\MyHabit\bin\Debug\System.Net.Http.Extensions.dll
 D:\code\MyHabit\bin\Debug\System.Net.Http.Formatting.dll
 D:\code\MyHabit\bin\Debug\System.Net.Http.Primitives.dll
+D:\code\MyHabit\obj\Debug\MyHabit.FrmCMS.resources

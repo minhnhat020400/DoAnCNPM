@@ -31,23 +31,17 @@ namespace MyHabit
 
         private void button3_Click(object sender, EventArgs e)
         {
-            FrmSleep frm = new FrmSleep();
-            this.Hide();
-            frm.ShowDialog();
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            FrmEat frm = new FrmEat();
-            this.Hide();
-            frm.ShowDialog();
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            FrmDrink frm = new FrmDrink();
-            this.Hide();
-            frm.ShowDialog();
+            
         }
     }
 }

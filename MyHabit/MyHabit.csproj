@@ -80,19 +80,6 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Data.cs">
-      <DependentUpon>Data.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="Data.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Data.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="Data1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Data1.xsd</DependentUpon>
-    </Compile>
     <Compile Include="FrmChagePassWord.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,29 +116,17 @@
     <Compile Include="FrmCreateAccount.Designer.cs">
       <DependentUpon>FrmCreateAccount.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmDrink.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmDrink.Designer.cs">
-      <DependentUpon>FrmDrink.cs</DependentUpon>
-    </Compile>
     <Compile Include="FrmMain.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmMain.Designer.cs">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmSleep.cs">
+    <Compile Include="FrmCMS.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmSleep.Designer.cs">
-      <DependentUpon>FrmSleep.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmToMo.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmToMo.Designer.cs">
-      <DependentUpon>FrmToMo.cs</DependentUpon>
+    <Compile Include="FrmCMS.Designer.cs">
+      <DependentUpon>FrmCMS.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmLogin.cs">
       <SubType>Form</SubType>
@@ -167,12 +142,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="FrmEat.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmEat.Designer.cs">
-      <DependentUpon>FrmEat.cs</DependentUpon>
-    </Compile>
     <Compile Include="ringringForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -184,12 +153,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCreateAccount.resx">
       <DependentUpon>FrmCreateAccount.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmDrink.resx">
-      <DependentUpon>FrmDrink.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmEat.resx">
-      <DependentUpon>FrmEat.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCheck.resx">
       <DependentUpon>FrmCheck.cs</DependentUpon>
@@ -203,11 +166,8 @@
     <EmbeddedResource Include="FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmSleep.resx">
-      <DependentUpon>FrmSleep.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmToMo.resx">
-      <DependentUpon>FrmToMo.cs</DependentUpon>
+    <EmbeddedResource Include="FrmCMS.resx">
+      <DependentUpon>FrmCMS.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
@@ -227,28 +187,6 @@
     <EmbeddedResource Include="ringringForm.resx">
       <DependentUpon>ringringForm.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="Data.xsc">
-      <DependentUpon>Data.xsd</DependentUpon>
-    </None>
-    <None Include="Data.xsd">
-      <SubType>Designer</SubType>
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Data.Designer.cs</LastGenOutput>
-    </None>
-    <None Include="Data.xss">
-      <DependentUpon>Data.xsd</DependentUpon>
-    </None>
-    <None Include="Data1.xsc">
-      <DependentUpon>Data1.xsd</DependentUpon>
-    </None>
-    <None Include="Data1.xsd">
-      <SubType>Designer</SubType>
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Data1.Designer.cs</LastGenOutput>
-    </None>
-    <None Include="Data1.xss">
-      <DependentUpon>Data1.xsd</DependentUpon>
-    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

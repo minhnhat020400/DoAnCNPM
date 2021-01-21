@@ -33,7 +33,7 @@ namespace MyHabit
 
         private void btnDiscover_Click(object sender, EventArgs e)
         {
-            FrmToMo frm = new FrmToMo();
+            FrmCMS frm = new FrmCMS();
             this.Hide();
             frm.ShowDialog();
         }
