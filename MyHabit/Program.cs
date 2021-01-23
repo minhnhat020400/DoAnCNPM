@@ -15,7 +15,7 @@ namespace MyHabit
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmCMS());
+            Application.Run(new FrmLogin());
         }
     }
 }

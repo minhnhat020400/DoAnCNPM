@@ -42,6 +42,9 @@
     <Reference Include="LiveCharts.Wpf, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
       <HintPath>packages\LiveCharts.Wpf.0.9.7\lib\net45\LiveCharts.Wpf.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
@@ -85,12 +88,6 @@
     </Compile>
     <Compile Include="FrmChagePassWord.Designer.cs">
       <DependentUpon>FrmChagePassWord.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmCheck.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmCheck.Designer.cs">
-      <DependentUpon>FrmCheck.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmBMI.cs">
       <SubType>Form</SubType>
@@ -154,9 +151,6 @@
     <EmbeddedResource Include="FrmCreateAccount.resx">
       <DependentUpon>FrmCreateAccount.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmCheck.resx">
-      <DependentUpon>FrmCheck.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FormThongKetuan.resx">
       <DependentUpon>FormThongKetuan.cs</DependentUpon>
     </EmbeddedResource>
@@ -183,6 +177,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="ringringForm.resx">
       <DependentUpon>ringringForm.cs</DependentUpon>
@@ -200,6 +195,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\white star.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yellow star.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
