@@ -171,7 +171,7 @@ namespace MyHabit
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 86);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(188, 474);
+            this.panel1.Size = new System.Drawing.Size(188, 498);
             this.panel1.TabIndex = 14;
             // 
             // button2
@@ -257,7 +257,7 @@ namespace MyHabit
             this.tabControl1.Location = new System.Drawing.Point(188, 86);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(568, 474);
+            this.tabControl1.Size = new System.Drawing.Size(568, 498);
             this.tabControl1.TabIndex = 15;
             this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
             // 
@@ -295,7 +295,7 @@ namespace MyHabit
             this.tp1.Location = new System.Drawing.Point(4, 22);
             this.tp1.Name = "tp1";
             this.tp1.Padding = new System.Windows.Forms.Padding(3);
-            this.tp1.Size = new System.Drawing.Size(574, 448);
+            this.tp1.Size = new System.Drawing.Size(560, 472);
             this.tp1.TabIndex = 0;
             this.tp1.Text = "Ăn";
             this.tp1.UseVisualStyleBackColor = true;
@@ -304,7 +304,7 @@ namespace MyHabit
             // pb5
             // 
             this.pb5.Image = global::MyHabit.Properties.Resources.white_star;
-            this.pb5.Location = new System.Drawing.Point(528, 327);
+            this.pb5.Location = new System.Drawing.Point(522, 329);
             this.pb5.Name = "pb5";
             this.pb5.Size = new System.Drawing.Size(30, 30);
             this.pb5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -314,7 +314,7 @@ namespace MyHabit
             // pb4
             // 
             this.pb4.Image = global::MyHabit.Properties.Resources.white_star;
-            this.pb4.Location = new System.Drawing.Point(492, 327);
+            this.pb4.Location = new System.Drawing.Point(486, 329);
             this.pb4.Name = "pb4";
             this.pb4.Size = new System.Drawing.Size(30, 30);
             this.pb4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -324,7 +324,7 @@ namespace MyHabit
             // pb3
             // 
             this.pb3.Image = global::MyHabit.Properties.Resources.white_star;
-            this.pb3.Location = new System.Drawing.Point(456, 327);
+            this.pb3.Location = new System.Drawing.Point(450, 329);
             this.pb3.Name = "pb3";
             this.pb3.Size = new System.Drawing.Size(30, 30);
             this.pb3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -334,7 +334,7 @@ namespace MyHabit
             // pb2
             // 
             this.pb2.Image = global::MyHabit.Properties.Resources.white_star;
-            this.pb2.Location = new System.Drawing.Point(420, 327);
+            this.pb2.Location = new System.Drawing.Point(414, 329);
             this.pb2.Name = "pb2";
             this.pb2.Size = new System.Drawing.Size(30, 30);
             this.pb2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -344,7 +344,7 @@ namespace MyHabit
             // pb1
             // 
             this.pb1.Image = global::MyHabit.Properties.Resources.white_star;
-            this.pb1.Location = new System.Drawing.Point(384, 327);
+            this.pb1.Location = new System.Drawing.Point(378, 329);
             this.pb1.Name = "pb1";
             this.pb1.Size = new System.Drawing.Size(30, 30);
             this.pb1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -360,7 +360,7 @@ namespace MyHabit
             // 
             // btnRate2
             // 
-            this.btnRate2.Location = new System.Drawing.Point(63, 417);
+            this.btnRate2.Location = new System.Drawing.Point(97, 401);
             this.btnRate2.Name = "btnRate2";
             this.btnRate2.Size = new System.Drawing.Size(135, 23);
             this.btnRate2.TabIndex = 35;
@@ -370,7 +370,7 @@ namespace MyHabit
             // 
             // btnRate1
             // 
-            this.btnRate1.Location = new System.Drawing.Point(63, 373);
+            this.btnRate1.Location = new System.Drawing.Point(97, 357);
             this.btnRate1.Name = "btnRate1";
             this.btnRate1.Size = new System.Drawing.Size(135, 23);
             this.btnRate1.TabIndex = 35;
@@ -569,7 +569,7 @@ namespace MyHabit
             this.tp2.Location = new System.Drawing.Point(4, 22);
             this.tp2.Name = "tp2";
             this.tp2.Padding = new System.Windows.Forms.Padding(3);
-            this.tp2.Size = new System.Drawing.Size(574, 448);
+            this.tp2.Size = new System.Drawing.Size(560, 472);
             this.tp2.TabIndex = 1;
             this.tp2.Text = "Uống";
             this.tp2.UseVisualStyleBackColor = true;
@@ -588,7 +588,7 @@ namespace MyHabit
             // 
             this.txtDG2.Location = new System.Drawing.Point(221, 389);
             this.txtDG2.Name = "txtDG2";
-            this.txtDG2.Size = new System.Drawing.Size(173, 20);
+            this.txtDG2.Size = new System.Drawing.Size(187, 20);
             this.txtDG2.TabIndex = 21;
             // 
             // btnDGG
@@ -754,14 +754,14 @@ namespace MyHabit
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(560, 448);
+            this.tabPage3.Size = new System.Drawing.Size(560, 472);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Ngủ";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // btnrate3
             // 
-            this.btnrate3.Location = new System.Drawing.Point(268, 351);
+            this.btnrate3.Location = new System.Drawing.Point(273, 383);
             this.btnrate3.Name = "btnrate3";
             this.btnrate3.Size = new System.Drawing.Size(75, 23);
             this.btnrate3.TabIndex = 36;
@@ -771,7 +771,7 @@ namespace MyHabit
             // 
             // txtrate3
             // 
-            this.txtrate3.Location = new System.Drawing.Point(357, 408);
+            this.txtrate3.Location = new System.Drawing.Point(362, 440);
             this.txtrate3.Name = "txtrate3";
             this.txtrate3.Size = new System.Drawing.Size(191, 20);
             this.txtrate3.TabIndex = 35;
@@ -779,7 +779,7 @@ namespace MyHabit
             // pb555
             // 
             this.pb555.Image = global::MyHabit.Properties.Resources.white_star;
-            this.pb555.Location = new System.Drawing.Point(501, 341);
+            this.pb555.Location = new System.Drawing.Point(506, 373);
             this.pb555.Name = "pb555";
             this.pb555.Size = new System.Drawing.Size(30, 30);
             this.pb555.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -789,7 +789,7 @@ namespace MyHabit
             // pb444
             // 
             this.pb444.Image = global::MyHabit.Properties.Resources.white_star;
-            this.pb444.Location = new System.Drawing.Point(465, 341);
+            this.pb444.Location = new System.Drawing.Point(470, 373);
             this.pb444.Name = "pb444";
             this.pb444.Size = new System.Drawing.Size(30, 30);
             this.pb444.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -799,7 +799,7 @@ namespace MyHabit
             // pb333
             // 
             this.pb333.Image = global::MyHabit.Properties.Resources.white_star;
-            this.pb333.Location = new System.Drawing.Point(429, 341);
+            this.pb333.Location = new System.Drawing.Point(434, 373);
             this.pb333.Name = "pb333";
             this.pb333.Size = new System.Drawing.Size(30, 30);
             this.pb333.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -809,7 +809,7 @@ namespace MyHabit
             // pb222
             // 
             this.pb222.Image = global::MyHabit.Properties.Resources.white_star;
-            this.pb222.Location = new System.Drawing.Point(393, 341);
+            this.pb222.Location = new System.Drawing.Point(398, 373);
             this.pb222.Name = "pb222";
             this.pb222.Size = new System.Drawing.Size(30, 30);
             this.pb222.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -819,7 +819,7 @@ namespace MyHabit
             // pb111
             // 
             this.pb111.Image = global::MyHabit.Properties.Resources.white_star;
-            this.pb111.Location = new System.Drawing.Point(357, 341);
+            this.pb111.Location = new System.Drawing.Point(362, 373);
             this.pb111.Name = "pb111";
             this.pb111.Size = new System.Drawing.Size(30, 30);
             this.pb111.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -828,21 +828,21 @@ namespace MyHabit
             // 
             // txtt
             // 
-            this.txtt.Location = new System.Drawing.Point(340, 7);
+            this.txtt.Location = new System.Drawing.Point(222, 41);
             this.txtt.Name = "txtt";
-            this.txtt.Size = new System.Drawing.Size(67, 20);
+            this.txtt.Size = new System.Drawing.Size(121, 20);
             this.txtt.TabIndex = 33;
             // 
             // txtfr
             // 
             this.txtfr.Location = new System.Drawing.Point(222, 7);
             this.txtfr.Name = "txtfr";
-            this.txtfr.Size = new System.Drawing.Size(67, 20);
+            this.txtfr.Size = new System.Drawing.Size(121, 20);
             this.txtfr.TabIndex = 32;
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(268, 44);
+            this.button6.Location = new System.Drawing.Point(229, 74);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(75, 23);
             this.button6.TabIndex = 30;
@@ -853,7 +853,7 @@ namespace MyHabit
             // lbl_ratings3
             // 
             this.lbl_ratings3.AutoSize = true;
-            this.lbl_ratings3.Location = new System.Drawing.Point(438, 382);
+            this.lbl_ratings3.Location = new System.Drawing.Point(443, 414);
             this.lbl_ratings3.Name = "lbl_ratings3";
             this.lbl_ratings3.Size = new System.Drawing.Size(10, 13);
             this.lbl_ratings3.TabIndex = 28;
@@ -862,7 +862,7 @@ namespace MyHabit
             // lbfr
             // 
             this.lbfr.AutoSize = true;
-            this.lbfr.Location = new System.Drawing.Point(477, 15);
+            this.lbfr.Location = new System.Drawing.Point(431, 7);
             this.lbfr.Name = "lbfr";
             this.lbfr.Size = new System.Drawing.Size(10, 13);
             this.lbfr.TabIndex = 28;
@@ -871,7 +871,7 @@ namespace MyHabit
             // label26
             // 
             this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(45, 351);
+            this.label26.Location = new System.Drawing.Point(49, 388);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(125, 13);
             this.label26.TabIndex = 27;
@@ -881,7 +881,7 @@ namespace MyHabit
             // label25
             // 
             this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(369, 382);
+            this.label25.Location = new System.Drawing.Point(374, 414);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(50, 13);
             this.label25.TabIndex = 27;
@@ -891,7 +891,7 @@ namespace MyHabit
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(436, 15);
+            this.label13.Location = new System.Drawing.Point(390, 7);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(33, 13);
             this.label13.TabIndex = 27;
@@ -900,7 +900,7 @@ namespace MyHabit
             // lbt
             // 
             this.lbt.AutoSize = true;
-            this.lbt.Location = new System.Drawing.Point(477, 48);
+            this.lbt.Location = new System.Drawing.Point(431, 40);
             this.lbt.Name = "lbt";
             this.lbt.Size = new System.Drawing.Size(10, 13);
             this.lbt.TabIndex = 26;
@@ -909,7 +909,7 @@ namespace MyHabit
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(436, 48);
+            this.label11.Location = new System.Drawing.Point(390, 40);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(23, 13);
             this.label11.TabIndex = 29;
@@ -918,11 +918,12 @@ namespace MyHabit
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(311, 10);
+            this.label10.Location = new System.Drawing.Point(186, 45);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(27, 13);
+            this.label10.Size = new System.Drawing.Size(30, 13);
             this.label10.TabIndex = 25;
-            this.label10.Text = "Đến";
+            this.label10.Text = "Đến:";
+            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // label12
             // 
@@ -936,7 +937,7 @@ namespace MyHabit
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(169, 390);
+            this.label14.Location = new System.Drawing.Point(173, 427);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(23, 13);
             this.label14.TabIndex = 23;
@@ -944,7 +945,7 @@ namespace MyHabit
             // 
             // txtketqua
             // 
-            this.txtketqua.Location = new System.Drawing.Point(53, 383);
+            this.txtketqua.Location = new System.Drawing.Point(57, 420);
             this.txtketqua.Name = "txtketqua";
             this.txtketqua.Size = new System.Drawing.Size(100, 20);
             this.txtketqua.TabIndex = 21;
@@ -977,7 +978,7 @@ namespace MyHabit
             this.groupBox1.Controls.Add(this.label17);
             this.groupBox1.Controls.Add(this.label18);
             this.groupBox1.Controls.Add(this.label19);
-            this.groupBox1.Location = new System.Drawing.Point(12, 71);
+            this.groupBox1.Location = new System.Drawing.Point(15, 103);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(502, 264);
             this.groupBox1.TabIndex = 18;
@@ -1116,7 +1117,7 @@ namespace MyHabit
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(756, 560);
+            this.ClientSize = new System.Drawing.Size(756, 584);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);

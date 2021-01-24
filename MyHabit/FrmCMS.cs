@@ -41,8 +41,8 @@ namespace MyHabit
         // API sleep////////////////////////////
         public class Hour
         {
-            public string from { get; set; }
-            public string to { get; set; }
+            public string fromHour { get; set; }
+            public string toHour { get; set; }
 
 
         }
@@ -59,13 +59,13 @@ namespace MyHabit
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Token1);
 
             // Link api
-            String apiUrl = "/api/sleeping-habit/add-sleeping-hour";
+            String apiUrl = "/add-sleeping-hour";
 
             // Model để gửi dữ liệu lên server
             Hour login = new Hour()
             {
-                from = fr,
-                to = t,
+                fromHour = fr,
+                toHour = t,
 
             };
 
@@ -81,12 +81,12 @@ namespace MyHabit
             {
                 // nếu server trả về 1 chuổi thì mình dùng như cách bên dưới
                 // server trả về một đối tượng thì dùng await response.Content.ReadAsAsync<Doi tuong>()
-                var token = await response.Content.ReadAsStringAsync();
-                return token;
+                var Token1 = await response.Content.ReadAsStringAsync();
+                return Token1;
             }
             else
             {
-                var token = await response.Content.ReadAsStringAsync();
+                var Token1 = await response.Content.ReadAsStringAsync();
                 return null;
             }
         }
@@ -134,12 +134,12 @@ namespace MyHabit
             {
                 // nếu server trả về 1 chuổi thì mình dùng như cách bên dưới
                 // server trả về một đối tượng thì dùng await response.Content.ReadAsAsync<Doi tuong>()
-                var token = await response.Content.ReadAsStringAsync();
-                return token;
+                var Token1 = await response.Content.ReadAsStringAsync();
+                return Token1;
             }
             else
             {
-                var token = await response.Content.ReadAsStringAsync();
+                var Token1 = await response.Content.ReadAsStringAsync();
                 return null;
             }
         }
@@ -184,12 +184,12 @@ namespace MyHabit
             {
                 // nếu server trả về 1 chuổi thì mình dùng như cách bên dưới
                 // server trả về một đối tượng thì dùng await response.Content.ReadAsAsync<Doi tuong>()
-                var token = await response.Content.ReadAsStringAsync();
-                return token;
+                var Token1 = await response.Content.ReadAsStringAsync();
+                return Token1;
             }
             else
             {
-                var token = await response.Content.ReadAsStringAsync();
+                var Token1 = await response.Content.ReadAsStringAsync();
                 return null;
             }
         }
@@ -288,9 +288,10 @@ namespace MyHabit
             Properties.Settings.Default.Save();
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private async void button4_Click(object sender, EventArgs e)
         {
             SaveSetting1();
+            var Token1 = await postdrink(txtNuoc.Text);
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -393,13 +394,7 @@ namespace MyHabit
 
         private void btntinh_Click(object sender, EventArgs e)
         {
-            //seclectedTime = cmbHour.Text + ":" + cmbMinute.Text + " " + cmbAMPM.Text;
-
-            //DateTime t1 = Convert.ToDateTime(txtTime.Text);
-            //DateTime t2 = Convert.ToDateTime(seclectedTime);
-
-            //TimeSpan time = t2.Subtract(t1);
-            //txtketqua.Text = time.TotalSeconds.ToString();
+            
         }
 
         private async void button6_Click(object sender, EventArgs e)
@@ -621,6 +616,11 @@ namespace MyHabit
             FrmBMI frm = new FrmBMI();
             this.Hide();
             frm.ShowDialog();
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void btnrate3_Click(object sender, EventArgs e)

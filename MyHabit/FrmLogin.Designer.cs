@@ -176,7 +176,7 @@ namespace MyHabit
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(262, 31);
             this.txtName.TabIndex = 12;
-            this.txtName.Text = "swagger3";
+            this.txtName.Text = "swagger1";
             // 
             // pictureBox4
             // 
