@@ -143,3 +143,4 @@ C:\Users\Nhat\Desktop\Myhabit\MyHabit\bin\Debug\System.Net.Http.Primitives.dll
 C:\Users\Nhat\Desktop\Myhabit\MyHabit\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Nhat\Desktop\Myhabit\MyHabit\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Nhat\Desktop\Myhabit\MyHabit\obj\Debug\MyHabit.FrmforgetPassword.resources
+C:\Users\Nhat\Desktop\Myhabit\MyHabit\obj\Debug\MyHabit.FrmMonth.resources

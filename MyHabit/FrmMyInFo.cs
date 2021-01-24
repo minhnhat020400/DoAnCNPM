@@ -150,9 +150,16 @@ namespace MyHabit
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private async void button2_Click(object sender, EventArgs e)
         {
-
+            int h = int.Parse(tbChieuCao.Text);
+            int w = int.Parse(tbCanNang.Text);
+            var token = await PutINfo(dateTimePicker1.Value.ToString("dd/MM/yyyy"), tbDiaChi.Text, tbTen.Text, h, tbTen.Text, chatSet(), int.Parse(tbCanNang.Text));
+            if (check_number() && token != null)
+            {
+                MessageBox.Show(mess1);
+            }
+            else MessageBox.Show(mess2);
         }
     }
 }
