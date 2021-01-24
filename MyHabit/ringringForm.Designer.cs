@@ -72,6 +72,7 @@ namespace MyHabit
             this.Controls.Add(this.richTextBox1);
             this.Name = "ringringForm";
             this.Text = "ringringForm";
+            this.Load += new System.EventHandler(this.ringringForm_Load);
             this.Shown += new System.EventHandler(this.ringringForm_Shown);
             this.ResumeLayout(false);
 

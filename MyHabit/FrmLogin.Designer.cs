@@ -58,10 +58,17 @@ namespace MyHabit
             // 
             this.btCreateAcc.BackColor = System.Drawing.Color.Black;
             this.btCreateAcc.ForeColor = System.Drawing.Color.White;
+<<<<<<< HEAD
             this.btCreateAcc.Location = new System.Drawing.Point(775, 399);
             this.btCreateAcc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btCreateAcc.Name = "btCreateAcc";
             this.btCreateAcc.Size = new System.Drawing.Size(131, 46);
+=======
+            this.btCreateAcc.Location = new System.Drawing.Point(581, 324);
+            this.btCreateAcc.Margin = new System.Windows.Forms.Padding(2);
+            this.btCreateAcc.Name = "btCreateAcc";
+            this.btCreateAcc.Size = new System.Drawing.Size(87, 37);
+>>>>>>> nhat1/merge_test
             this.btCreateAcc.TabIndex = 1;
             this.btCreateAcc.Text = "Tạo tài khoản";
             this.btCreateAcc.UseVisualStyleBackColor = false;
@@ -71,10 +78,17 @@ namespace MyHabit
             // 
             this.btnOut.BackColor = System.Drawing.Color.Black;
             this.btnOut.ForeColor = System.Drawing.Color.Transparent;
+<<<<<<< HEAD
             this.btnOut.Location = new System.Drawing.Point(607, 486);
             this.btnOut.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnOut.Name = "btnOut";
             this.btnOut.Size = new System.Drawing.Size(131, 46);
+=======
+            this.btnOut.Location = new System.Drawing.Point(455, 395);
+            this.btnOut.Margin = new System.Windows.Forms.Padding(2);
+            this.btnOut.Name = "btnOut";
+            this.btnOut.Size = new System.Drawing.Size(87, 37);
+>>>>>>> nhat1/merge_test
             this.btnOut.TabIndex = 3;
             this.btnOut.Text = "Thoát";
             this.btnOut.UseVisualStyleBackColor = false;
@@ -84,8 +98,13 @@ namespace MyHabit
             // 
             this.btGetIn.BackColor = System.Drawing.Color.Black;
             this.btGetIn.ForeColor = System.Drawing.Color.Transparent;
+<<<<<<< HEAD
             this.btGetIn.Location = new System.Drawing.Point(607, 399);
             this.btGetIn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+=======
+            this.btGetIn.Location = new System.Drawing.Point(455, 324);
+            this.btGetIn.Margin = new System.Windows.Forms.Padding(2);
+>>>>>>> nhat1/merge_test
             this.btGetIn.Name = "btGetIn";
             this.btGetIn.Size = new System.Drawing.Size(116, 46);
             this.btGetIn.TabIndex = 0;
@@ -177,13 +196,18 @@ namespace MyHabit
             // 
             this.txtName.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.txtName.Location = new System.Drawing.Point(591, 218);
             this.txtName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+=======
+            this.txtName.Location = new System.Drawing.Point(443, 177);
+            this.txtName.Margin = new System.Windows.Forms.Padding(2);
+>>>>>>> nhat1/merge_test
             this.txtName.Multiline = true;
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(348, 37);
             this.txtName.TabIndex = 12;
-            this.txtName.Text = "trang";
+            this.txtName.Text = "swagger1";
             // 
             // pictureBox4
             // 
@@ -201,8 +225,13 @@ namespace MyHabit
             this.txtPass.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPass.ForeColor = System.Drawing.Color.Black;
+<<<<<<< HEAD
             this.txtPass.Location = new System.Drawing.Point(591, 318);
             this.txtPass.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+=======
+            this.txtPass.Location = new System.Drawing.Point(443, 258);
+            this.txtPass.Margin = new System.Windows.Forms.Padding(2);
+>>>>>>> nhat1/merge_test
             this.txtPass.Multiline = true;
             this.txtPass.Name = "txtPass";
             this.txtPass.PasswordChar = '*';
@@ -214,10 +243,17 @@ namespace MyHabit
             // 
             this.btChagePass.BackColor = System.Drawing.Color.Black;
             this.btChagePass.ForeColor = System.Drawing.Color.White;
+<<<<<<< HEAD
             this.btChagePass.Location = new System.Drawing.Point(775, 486);
             this.btChagePass.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btChagePass.Name = "btChagePass";
             this.btChagePass.Size = new System.Drawing.Size(131, 46);
+=======
+            this.btChagePass.Location = new System.Drawing.Point(581, 395);
+            this.btChagePass.Margin = new System.Windows.Forms.Padding(2);
+            this.btChagePass.Name = "btChagePass";
+            this.btChagePass.Size = new System.Drawing.Size(87, 37);
+>>>>>>> nhat1/merge_test
             this.btChagePass.TabIndex = 14;
             this.btChagePass.Text = "quên mật khẩu";
             this.btChagePass.UseVisualStyleBackColor = false;
@@ -244,7 +280,11 @@ namespace MyHabit
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.IsMdiContainer = true;
+<<<<<<< HEAD
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+=======
+            this.Margin = new System.Windows.Forms.Padding(2);
+>>>>>>> nhat1/merge_test
             this.Name = "FrmLogin";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

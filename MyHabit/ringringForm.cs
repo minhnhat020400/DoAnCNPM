@@ -12,9 +12,9 @@ namespace MyHabit
 {
     public partial class ringringForm : Form
     {
-        static FrmSleep form;
+        static FrmCMS form;
         string _message;
-        public ringringForm(FrmSleep f)
+        public ringringForm(FrmCMS f)
         {
             InitializeComponent();
 
@@ -40,6 +40,11 @@ namespace MyHabit
         private void ringringForm_Shown(object sender, EventArgs e)
         {
             richTextBox1.Text = _message;
+        }
+
+        private void ringringForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

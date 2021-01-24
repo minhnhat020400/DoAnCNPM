@@ -15,7 +15,11 @@ namespace MyHabit
     public partial class FrmLogin : Form
     {
         static HttpClient client = new HttpClient();
+<<<<<<< HEAD
         public static string TokenMess;
+=======
+        public static string Token;
+>>>>>>> nhat1/merge_test
         public class Login
         {
             public string userName { get; set; }
@@ -57,7 +61,11 @@ namespace MyHabit
                 // nếu server trả về 1 chuổi thì mình dùng như cách bên dưới
                 // server trả về một đối tượng thì dùng await response.Content.ReadAsAsync<Doi tuong>()
                 var token = await response.Content.ReadAsStringAsync();
+<<<<<<< HEAD
                 TokenMess = token.ToString();
+=======
+                Token = token.ToString(); 
+>>>>>>> nhat1/merge_test
                 return token;
             }
             else
@@ -72,6 +80,14 @@ namespace MyHabit
             InitializeComponent();
         }
 
+<<<<<<< HEAD
+=======
+        private void FrmLogin_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+>>>>>>> nhat1/merge_test
         private async void btGetIn_Click(object sender, EventArgs e)
         {
             var Token = await test(txtName.Text, txtPass.Text);
