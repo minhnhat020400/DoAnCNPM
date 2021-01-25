@@ -29,14 +29,14 @@ namespace MyHabit
         string snoozeTime;
         bool snoozeSet = false;
 
-        string wavpath = @"D:\Ringtone\";
+        string wavpath = @"C:\Ringtone\";
         SoundPlayer soundPlayer;
 
         ringringForm ringForm;
 
         static HttpClient client = new HttpClient();
 
-        public static string Token1 = FrmLogin.Token;
+        public static string Token1 = FrmLogin.TokenMess;
 
         // API sleep////////////////////////////
         public class Hour
@@ -91,6 +91,7 @@ namespace MyHabit
             }
         }
         
+
         // API eat///////////////////////////////////////////
         public class Eat
         {
@@ -147,7 +148,6 @@ namespace MyHabit
         public class Drink
         {
             public string total { get; set; }
-           
 
 
         }
@@ -223,6 +223,7 @@ namespace MyHabit
             GetSetting();
             UpdateData();
                   
+
         }
         private void UpdateData()
         {
@@ -285,6 +286,7 @@ namespace MyHabit
 
            
 
+
             Properties.Settings.Default.Save();
         }
 
@@ -301,6 +303,7 @@ namespace MyHabit
             frm.ShowDialog();
         }
        
+
         public void SaveSetting1()
         {
             Properties.Settings.Default.ML = Convert.ToInt32(txtNuoc.Text);
@@ -319,6 +322,7 @@ namespace MyHabit
         private void tabPage2_Click(object sender, EventArgs e)
         {
             
+
         }
 
         private void tabPage1_Click(object sender, EventArgs e)
@@ -395,6 +399,7 @@ namespace MyHabit
         private void btntinh_Click(object sender, EventArgs e)
         {
             
+
         }
 
         private async void button6_Click(object sender, EventArgs e)
@@ -431,16 +436,19 @@ namespace MyHabit
         private void pb_str5_Click_1(object sender, EventArgs e)
         {
             
+
         }
 
         private void pb_str4_Click_1(object sender, EventArgs e)
         {
            
+
         }
 
         private void pb_str3_Click_1(object sender, EventArgs e)
         {
             
+
         }
 
         private void btnRate1_Click(object sender, EventArgs e)
@@ -484,7 +492,7 @@ namespace MyHabit
             _tong = _sang + _trua + _chieu;
             txtTongcalo.Text = _tong.ToString();
 
-            if(_tong < 1500)
+            if (_tong < 1500)
             {
                 txtDG.Text = "Bạn cần nạp thêm calo trong ngày.";
 
@@ -496,7 +504,7 @@ namespace MyHabit
                 pb1.Image = Resources.yellow_star;
                 lbl_ratings.Text = "1";
             }
-            else if (_tong == 1500 )
+            else if (_tong == 1500)
             {
                 txtDG.Text = "1.500 calo mỗi ngày để giảm một pound cân nặng mỗi tuần.";
 
@@ -508,7 +516,7 @@ namespace MyHabit
                 pb4.Image = Resources.yellow_star;
                 lbl_ratings.Text = "4";
             }
-            else if(_tong > 1500 && _tong < 1899)
+            else if (_tong > 1500 && _tong < 1899)
             {
                 txtDG.Text = "Bạn cần nạp thêm calo trong ngày.";
 
@@ -520,7 +528,7 @@ namespace MyHabit
                 pb3.Image = Resources.yellow_star;
                 lbl_ratings.Text = "3";
             }
-            else if(_tong >=1900 && _tong <=2000)
+            else if (_tong >= 1900 && _tong <= 2000)
             {
                 txtDG.Text = "Lượng calo lý tưởng trong ngày.";
 
@@ -554,7 +562,7 @@ namespace MyHabit
         {
             _nuoc = double.Parse(txtNuoc.Text);
 
-            if(_nuoc < 1600)
+            if (_nuoc < 1600)
             {
                 txtDG2.Text = "Bạn cần uống thêm nước trong ngày!";
 
@@ -566,7 +574,7 @@ namespace MyHabit
                 pb33.Image = Resources.yellow_star;
                 lbl_ratings2.Text = "3";
             }
-            else if (_nuoc >=1600 && _nuoc <=2000)
+            else if (_nuoc >= 1600 && _nuoc <= 2000)
             {
                 txtDG2.Text = "Bạn đã uống đủ lượng nước trong ngày!";
 
@@ -588,7 +596,7 @@ namespace MyHabit
                 pb11.Image = Resources.yellow_star;
                 pb22.Image = Resources.yellow_star;
                 lbl_ratings2.Text = "2";
-            }  
+            }
         }
 
         private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
@@ -623,11 +631,256 @@ namespace MyHabit
 
         }
 
-        private void btnrate3_Click(object sender, EventArgs e)
+        private async void BtnSave_Click_1(object sender, EventArgs e)
         {
-            _ngu = double.Parse(txtketqua.Text);
+            SaveSetting();
+            var Token1 = await postcalo(txtSang.Text, txtTrua.Text, txtChieu.Text);
+        }
 
-            if(_ngu < 7)
+        private void btnRate1_Click_1(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtSang.Text))
+            {
+                MessageBox.Show("Vui lòng nhập calo buổi sáng!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtSang.Focus();
+            }
+            if (string.IsNullOrEmpty(txtTrua.Text))
+            {
+                MessageBox.Show("Vui lòng nhập calo buổi trưa!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtTrua.Focus();
+            }
+            if (string.IsNullOrEmpty(txtChieu.Text))
+            {
+                MessageBox.Show("Vui lòng nhập calo buổi chiều!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtChieu.Focus();
+            }
+
+            if (!double.TryParse(txtSang.Text, out _sang))
+            {
+                MessageBox.Show("Vui lòng nhập calo buổi sáng!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtSang.Focus();
+            }
+            if (!double.TryParse(txtTrua.Text, out _trua))
+            {
+                MessageBox.Show("Vui lòng nhập calo buổi trưa!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtTrua.Focus();
+            }
+            if (!double.TryParse(txtChieu.Text, out _chieu))
+            {
+                MessageBox.Show("Vui lòng nhập calo buổi chiều!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtChieu.Focus();
+            }
+
+
+            _sang = double.Parse(txtSang.Text);
+            _trua = double.Parse(txtTrua.Text);
+            _chieu = double.Parse(txtChieu.Text);
+            _tong = _sang + _trua + _chieu;
+            txtTongcalo.Text = _tong.ToString();
+
+            if (_tong < 1500)
+            {
+                txtDG.Text = "Bạn cần nạp thêm calo trong ngày.";
+
+                pb2.Image = Resources.white_star;
+                pb3.Image = Resources.white_star;
+                pb4.Image = Resources.white_star;
+                pb5.Image = Resources.white_star;
+
+                pb1.Image = Resources.yellow_star;
+                lbl_ratings.Text = "1";
+            }
+            else if (_tong == 1500)
+            {
+                txtDG.Text = "1.500 calo mỗi ngày để giảm một pound cân nặng mỗi tuần.";
+
+                pb5.Image = Resources.white_star;
+
+                pb1.Image = Resources.yellow_star;
+                pb2.Image = Resources.yellow_star;
+                pb3.Image = Resources.yellow_star;
+                pb4.Image = Resources.yellow_star;
+                lbl_ratings.Text = "4";
+            }
+            else if (_tong > 1500 && _tong < 1899)
+            {
+                txtDG.Text = "Bạn cần nạp thêm calo trong ngày.";
+
+                pb4.Image = Resources.white_star;
+                pb5.Image = Resources.white_star;
+
+                pb1.Image = Resources.yellow_star;
+                pb2.Image = Resources.yellow_star;
+                pb3.Image = Resources.yellow_star;
+                lbl_ratings.Text = "3";
+            }
+            else if (_tong >= 1900 && _tong <= 2000)
+            {
+                txtDG.Text = "Lượng calo lý tưởng trong ngày.";
+
+                pb1.Image = Resources.yellow_star;
+                pb2.Image = Resources.yellow_star;
+                pb3.Image = Resources.yellow_star;
+                pb4.Image = Resources.yellow_star;
+                pb5.Image = Resources.yellow_star;
+                lbl_ratings.Text = "5";
+            }
+            else
+            {
+                txtDG.Text = "Bạn nạp thừa lượng calo trong ngày";
+
+                pb3.Image = Resources.white_star;
+                pb4.Image = Resources.white_star;
+                pb5.Image = Resources.white_star;
+
+                pb1.Image = Resources.yellow_star;
+                pb2.Image = Resources.yellow_star;
+                lbl_ratings.Text = "2";
+            }
+        }
+
+        private void btnRate2_Click_1(object sender, EventArgs e)
+        {
+            _sang = double.Parse(txtSang.Text);
+            _trua = double.Parse(txtTrua.Text);
+            _chieu = double.Parse(txtChieu.Text);
+            _tong = _sang + _trua + _chieu;
+            txtTongcalo.Text = _tong.ToString();
+
+            if (_tong < 2000)
+            {
+                txtDG.Text = "Bạn cần nạp thêm calo trong ngày.";
+
+                pb2.Image = Resources.white_star;
+                pb3.Image = Resources.white_star;
+                pb4.Image = Resources.white_star;
+                pb5.Image = Resources.white_star;
+
+                pb1.Image = Resources.yellow_star;
+                lbl_ratings.Text = "1";
+            }
+            else if (_tong == 2000)
+            {
+                txtDG.Text = "1.500 calo mỗi ngày để giảm một pound cân nặng mỗi tuần.";
+
+                pb5.Image = Resources.white_star;
+
+                pb1.Image = Resources.yellow_star;
+                pb2.Image = Resources.yellow_star;
+                pb3.Image = Resources.yellow_star;
+                pb4.Image = Resources.yellow_star;
+                lbl_ratings.Text = "4";
+            }
+            else if (_tong > 2000 && _tong < 2399)
+            {
+                txtDG.Text = "Bạn cần nạp thêm calo trong ngày.";
+
+                pb4.Image = Resources.white_star;
+                pb5.Image = Resources.white_star;
+
+                pb1.Image = Resources.yellow_star;
+                pb2.Image = Resources.yellow_star;
+                pb3.Image = Resources.yellow_star;
+                lbl_ratings.Text = "3";
+            }
+            else if (_tong >= 2400 && _tong <= 2500)
+            {
+                txtDG.Text = "Lượng calo lý tưởng trong ngày.";
+
+                pb1.Image = Resources.yellow_star;
+                pb2.Image = Resources.yellow_star;
+                pb3.Image = Resources.yellow_star;
+                pb4.Image = Resources.yellow_star;
+                pb5.Image = Resources.yellow_star;
+                lbl_ratings.Text = "5";
+            }
+            else
+            {
+                txtDG.Text = "Bạn nạp thừa lượng calo trong ngày";
+
+                pb3.Image = Resources.white_star;
+                pb4.Image = Resources.white_star;
+                pb5.Image = Resources.white_star;
+
+                pb1.Image = Resources.yellow_star;
+                pb2.Image = Resources.yellow_star;
+                lbl_ratings.Text = "2";
+            }
+        }
+
+        private async void button4_Click_1(object sender, EventArgs e)
+        {
+            SaveSetting1();
+            var Token1 = await postdrink(txtNuoc.Text);
+        }
+
+        private void btnDGG_Click_1(object sender, EventArgs e)
+        {
+            _nuoc = double.Parse(txtNuoc.Text);
+
+            if (_nuoc < 1600)
+            {
+                txtDG2.Text = "Bạn cần uống thêm nước trong ngày!";
+
+                pb44.Image = Resources.white_star;
+                pb55.Image = Resources.white_star;
+
+                pb11.Image = Resources.yellow_star;
+                pb22.Image = Resources.yellow_star;
+                pb33.Image = Resources.yellow_star;
+                lbl_ratings2.Text = "3";
+            }
+            else if (_nuoc >= 1600 && _nuoc <= 2000)
+            {
+                txtDG2.Text = "Bạn đã uống đủ lượng nước trong ngày!";
+
+                pb11.Image = Resources.yellow_star;
+                pb22.Image = Resources.yellow_star;
+                pb33.Image = Resources.yellow_star;
+                pb44.Image = Resources.yellow_star;
+                pb55.Image = Resources.yellow_star;
+                lbl_ratings2.Text = "5";
+            }
+            else
+            {
+                txtDG2.Text = "Bạn đã uống hơn lượng nước trong ngày!";
+
+                pb33.Image = Resources.white_star;
+                pb44.Image = Resources.white_star;
+                pb55.Image = Resources.white_star;
+
+                pb11.Image = Resources.yellow_star;
+                pb22.Image = Resources.yellow_star;
+                lbl_ratings2.Text = "2";
+            }
+        }
+
+        private async void button6_Click_1(object sender, EventArgs e)
+        {
+            SaveSetting2();
+            var Token1 = await posttime(txtfr.Text, txtt.Text);
+        }
+
+        private void btnSetAlarm_Click_1(object sender, EventArgs e)
+        {
+            seclectedTime = cmbHour.Text + ":" + cmbMinute.Text + " " + cmbAMPM.Text;
+            seclectedSnooze = cmbSnooze.Text;
+            seclectedRingtone = listRingtone.Text;
+            seclectedMessage = richtxtMesaage.Text;
+
+            soundPlayer.SoundLocation = wavpath + seclectedRingtone + ".wav";
+
+            ringForm.Message(seclectedMessage);
+
+            groupBox1.Enabled = false;
+            alarmSet = true;
+        }
+
+        private void btnrate3_Click_1(object sender, EventArgs e)
+        {
+                _ngu = double.Parse(txtketqua.Text);
+
+            if (_ngu < 7)
             {
                 txtrate3.Text = "Bạn nên ngủ đủ giấc trong ngày!";
 
@@ -638,8 +891,8 @@ namespace MyHabit
                 pb222.Image = Resources.yellow_star;
                 pb333.Image = Resources.yellow_star;
                 lbl_ratings3.Text = "3";
-            }    
-            else if(_ngu >= 7 && _ngu <= 9)
+            }
+            else if (_ngu >= 7 && _ngu <= 9)
             {
                 txtrate3.Text = "Bạn đã ngủ đủ giấc trong ngày!";
 
@@ -650,7 +903,48 @@ namespace MyHabit
                 pb555.Image = Resources.yellow_star;
                 lbl_ratings3.Text = "5";
             }
-            else 
+            else
+            {
+                txtrate3.Text = "Bạn đã ngủ nhiều trong ngày!";
+
+                pb333.Image = Resources.white_star;
+                pb444.Image = Resources.white_star;
+                pb555.Image = Resources.white_star;
+
+                pb111.Image = Resources.yellow_star;
+                pb222.Image = Resources.yellow_star;
+                lbl_ratings3.Text = "2";
+            }
+        }
+
+        private void btnrate3_Click(object sender, EventArgs e)
+        {
+            _ngu = double.Parse(txtketqua.Text);
+
+            if (_ngu < 7)
+            {
+                txtrate3.Text = "Bạn nên ngủ đủ giấc trong ngày!";
+
+                pb444.Image = Resources.white_star;
+                pb555.Image = Resources.white_star;
+
+                pb111.Image = Resources.yellow_star;
+                pb222.Image = Resources.yellow_star;
+                pb333.Image = Resources.yellow_star;
+                lbl_ratings3.Text = "3";
+            }
+            else if (_ngu >= 7 && _ngu <= 9)
+            {
+                txtrate3.Text = "Bạn đã ngủ đủ giấc trong ngày!";
+
+                pb111.Image = Resources.yellow_star;
+                pb222.Image = Resources.yellow_star;
+                pb333.Image = Resources.yellow_star;
+                pb444.Image = Resources.yellow_star;
+                pb555.Image = Resources.yellow_star;
+                lbl_ratings3.Text = "5";
+            }
+            else
             {
                 txtrate3.Text = "Bạn đã ngủ nhiều trong ngày!";
 
@@ -736,11 +1030,13 @@ namespace MyHabit
         private void pb_str2_Click_1(object sender, EventArgs e)
         {
             
+
         }
 
         private void pb_str1_Click_1(object sender, EventArgs e)
         {
             
+
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)

@@ -113,6 +113,12 @@
     <Compile Include="DTO\CaloTuan.cs" />
     <Compile Include="DTO\ChangeAcc.cs" />
     <Compile Include="DTO\Info.cs" />
+    <Compile Include="FrmCMS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCMS.Designer.cs">
+      <DependentUpon>FrmCMS.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmforgetPassword.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -148,6 +154,17 @@
     </Compile>
     <Compile Include="FrmCMS.Designer.cs">
       <DependentUpon>FrmCMS.cs</DependentUpon>
+    <Compile Include="FrmMonth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMonth.Designer.cs">
+      <DependentUpon>FrmMonth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmToMo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmToMo.Designer.cs">
+      <DependentUpon>FrmToMo.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmLogin.cs">
       <SubType>Form</SubType>
@@ -169,6 +186,9 @@
     <Compile Include="ringringForm.Designer.cs">
       <DependentUpon>ringringForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FrmCMS.resx">
+      <DependentUpon>FrmCMS.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmforgetPassword.resx">
       <DependentUpon>FrmforgetPassword.cs</DependentUpon>
     </EmbeddedResource>
@@ -186,6 +206,11 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCMS.resx">
       <DependentUpon>FrmCMS.cs</DependentUpon>
+    <EmbeddedResource Include="FrmMonth.resx">
+      <DependentUpon>FrmMonth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmToMo.resx">
+      <DependentUpon>FrmToMo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>

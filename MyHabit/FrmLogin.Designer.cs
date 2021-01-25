@@ -61,7 +61,7 @@ namespace MyHabit
             this.btCreateAcc.Location = new System.Drawing.Point(775, 399);
             this.btCreateAcc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btCreateAcc.Name = "btCreateAcc";
-            this.btCreateAcc.Size = new System.Drawing.Size(131, 46);
+            this.btCreateAcc.Size = new System.Drawing.Size(115, 46);
             this.btCreateAcc.TabIndex = 1;
             this.btCreateAcc.Text = "Tạo tài khoản";
             this.btCreateAcc.UseVisualStyleBackColor = false;
@@ -74,7 +74,7 @@ namespace MyHabit
             this.btnOut.Location = new System.Drawing.Point(607, 486);
             this.btnOut.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnOut.Name = "btnOut";
-            this.btnOut.Size = new System.Drawing.Size(131, 46);
+            this.btnOut.Size = new System.Drawing.Size(116, 46);
             this.btnOut.TabIndex = 3;
             this.btnOut.Text = "Thoát";
             this.btnOut.UseVisualStyleBackColor = false;
@@ -98,7 +98,7 @@ namespace MyHabit
             this.pictureBox1.BackColor = System.Drawing.Color.White;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(532, 700);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -110,7 +110,7 @@ namespace MyHabit
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Location = new System.Drawing.Point(0, 1);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(532, 750);
             this.panel2.TabIndex = 5;
@@ -120,7 +120,7 @@ namespace MyHabit
             this.pictureBox2.BackColor = System.Drawing.Color.White;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(55, 217);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(423, 398);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -166,7 +166,7 @@ namespace MyHabit
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(577, 212);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(375, 53);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -189,7 +189,7 @@ namespace MyHabit
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
             this.pictureBox4.Location = new System.Drawing.Point(577, 311);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(375, 53);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -217,9 +217,9 @@ namespace MyHabit
             this.btChagePass.Location = new System.Drawing.Point(775, 486);
             this.btChagePass.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btChagePass.Name = "btChagePass";
-            this.btChagePass.Size = new System.Drawing.Size(131, 46);
+            this.btChagePass.Size = new System.Drawing.Size(115, 46);
             this.btChagePass.TabIndex = 14;
-            this.btChagePass.Text = "quên mật khẩu";
+            this.btChagePass.Text = "Quên mật khẩu";
             this.btChagePass.UseVisualStyleBackColor = false;
             this.btChagePass.Click += new System.EventHandler(this.btChagePass_Click);
             // 

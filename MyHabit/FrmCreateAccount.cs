@@ -93,7 +93,9 @@ namespace MyHabit
 
         private void btBack_Click(object sender, EventArgs e)
         {
+            FrmLogin frmLogin = new FrmLogin();
              this.Hide();
+            frmLogin.Show();
         }
     }
 }
