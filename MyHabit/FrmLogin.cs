@@ -15,7 +15,7 @@ namespace MyHabit
     public partial class FrmLogin : Form
     {
         static HttpClient client = new HttpClient();
-        public static string Token;
+        public static string TokenMess;
         public class Login
         {
             public string userName { get; set; }
@@ -57,7 +57,7 @@ namespace MyHabit
                 // nếu server trả về 1 chuổi thì mình dùng như cách bên dưới
                 // server trả về một đối tượng thì dùng await response.Content.ReadAsAsync<Doi tuong>()
                 var token = await response.Content.ReadAsStringAsync();
-                Token = token.ToString(); 
+                TokenMess = token.ToString();
                 return token;
             }
             else
@@ -70,11 +70,6 @@ namespace MyHabit
             public FrmLogin()
         {
             InitializeComponent();
-        }
-
-        private void FrmLogin_Load(object sender, EventArgs e)
-        {
-            
         }
 
         private async void btGetIn_Click(object sender, EventArgs e)
@@ -143,8 +138,17 @@ namespace MyHabit
 
         private void btChagePass_Click(object sender, EventArgs e)
         {
-            FrmChagePassWord frmChagePassWord = new FrmChagePassWord();
+            FrmforgetPassword frmChagePassWord = new FrmforgetPassword();
+            this.Hide();
             frmChagePassWord.ShowDialog();
         }
+
+        private void FrmLogin_Load(object sender, EventArgs e)
+        {
+            // this.TopMost = true;
+            // this.FormBorderStyle = FormBorderStyle.None;
+            //this.WindowState = FormWindowState.Maximized;
+        }
+
     }
 }
