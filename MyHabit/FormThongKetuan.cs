@@ -666,9 +666,9 @@ namespace MyHabit
             }
 
             richTextBox1.Text = " Đánh giá tuần này:"
-                                + "\n lượng calories tuần này =" + Tongcalotuannay +"Calories "+ t1
-                               + "\n lượng nước tuần này =" + TongMinituannay + "Mililit Nước "+t2
-                               + "\n lượng thời gian ngủ tuần này =" + TongThoiGiantuannay + "Phút "+ t3;
+                                + "\n lượng calories tuần này =" + Tongcalotuannay +"  Calories "+ t1
+                               + "\n lượng nước tuần này =" + TongMinituannay + " Mililit Nước "+t2
+                               + "\n lượng thời gian ngủ tuần này =" + TongThoiGiantuannay + " Phút "+ t3;
         }
 
         private void button3_Click(object sender, EventArgs e)

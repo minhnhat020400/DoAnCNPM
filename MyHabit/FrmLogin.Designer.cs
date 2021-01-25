@@ -61,7 +61,7 @@ namespace MyHabit
             this.btCreateAcc.Location = new System.Drawing.Point(775, 399);
             this.btCreateAcc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btCreateAcc.Name = "btCreateAcc";
-            this.btCreateAcc.Size = new System.Drawing.Size(131, 46);
+            this.btCreateAcc.Size = new System.Drawing.Size(115, 46);
             this.btCreateAcc.TabIndex = 1;
             this.btCreateAcc.Text = "Tạo tài khoản";
             this.btCreateAcc.UseVisualStyleBackColor = false;
@@ -74,7 +74,7 @@ namespace MyHabit
             this.btnOut.Location = new System.Drawing.Point(607, 486);
             this.btnOut.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnOut.Name = "btnOut";
-            this.btnOut.Size = new System.Drawing.Size(131, 46);
+            this.btnOut.Size = new System.Drawing.Size(116, 46);
             this.btnOut.TabIndex = 3;
             this.btnOut.Text = "Thoát";
             this.btnOut.UseVisualStyleBackColor = false;
@@ -217,9 +217,9 @@ namespace MyHabit
             this.btChagePass.Location = new System.Drawing.Point(775, 486);
             this.btChagePass.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btChagePass.Name = "btChagePass";
-            this.btChagePass.Size = new System.Drawing.Size(131, 46);
+            this.btChagePass.Size = new System.Drawing.Size(115, 46);
             this.btChagePass.TabIndex = 14;
-            this.btChagePass.Text = "quên mật khẩu";
+            this.btChagePass.Text = "Quên mật khẩu";
             this.btChagePass.UseVisualStyleBackColor = false;
             this.btChagePass.Click += new System.EventHandler(this.btChagePass_Click);
             // 

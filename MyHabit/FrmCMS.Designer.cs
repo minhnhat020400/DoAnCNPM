@@ -301,6 +301,7 @@ namespace MyHabit
             // 
             // pb5
             // 
+            this.pb5.Image = global::MyHabit.Properties.Resources.white_star;
             this.pb5.Location = new System.Drawing.Point(696, 405);
             this.pb5.Margin = new System.Windows.Forms.Padding(4);
             this.pb5.Name = "pb5";
@@ -311,6 +312,7 @@ namespace MyHabit
             // 
             // pb4
             // 
+            this.pb4.Image = global::MyHabit.Properties.Resources.white_star;
             this.pb4.Location = new System.Drawing.Point(648, 405);
             this.pb4.Margin = new System.Windows.Forms.Padding(4);
             this.pb4.Name = "pb4";
@@ -321,6 +323,7 @@ namespace MyHabit
             // 
             // pb3
             // 
+            this.pb3.Image = global::MyHabit.Properties.Resources.white_star;
             this.pb3.Location = new System.Drawing.Point(600, 405);
             this.pb3.Margin = new System.Windows.Forms.Padding(4);
             this.pb3.Name = "pb3";
@@ -331,6 +334,7 @@ namespace MyHabit
             // 
             // pb2
             // 
+            this.pb2.Image = global::MyHabit.Properties.Resources.white_star;
             this.pb2.Location = new System.Drawing.Point(552, 405);
             this.pb2.Margin = new System.Windows.Forms.Padding(4);
             this.pb2.Name = "pb2";
@@ -341,6 +345,7 @@ namespace MyHabit
             // 
             // pb1
             // 
+            this.pb1.Image = global::MyHabit.Properties.Resources.white_star;
             this.pb1.Location = new System.Drawing.Point(504, 405);
             this.pb1.Margin = new System.Windows.Forms.Padding(4);
             this.pb1.Name = "pb1";
@@ -626,6 +631,7 @@ namespace MyHabit
             // 
             // pb33
             // 
+            this.pb33.Image = global::MyHabit.Properties.Resources.white_star;
             this.pb33.Location = new System.Drawing.Point(396, 382);
             this.pb33.Margin = new System.Windows.Forms.Padding(4);
             this.pb33.Name = "pb33";
@@ -636,6 +642,7 @@ namespace MyHabit
             // 
             // pb11
             // 
+            this.pb11.Image = global::MyHabit.Properties.Resources.white_star;
             this.pb11.Location = new System.Drawing.Point(295, 382);
             this.pb11.Margin = new System.Windows.Forms.Padding(4);
             this.pb11.Name = "pb11";
@@ -646,6 +653,7 @@ namespace MyHabit
             // 
             // pb22
             // 
+            this.pb22.Image = global::MyHabit.Properties.Resources.white_star;
             this.pb22.Location = new System.Drawing.Point(343, 382);
             this.pb22.Margin = new System.Windows.Forms.Padding(4);
             this.pb22.Name = "pb22";
@@ -656,6 +664,7 @@ namespace MyHabit
             // 
             // pb55
             // 
+            this.pb55.Image = global::MyHabit.Properties.Resources.white_star;
             this.pb55.Location = new System.Drawing.Point(492, 382);
             this.pb55.Margin = new System.Windows.Forms.Padding(4);
             this.pb55.Name = "pb55";
@@ -666,6 +675,7 @@ namespace MyHabit
             // 
             // pb44
             // 
+            this.pb44.Image = global::MyHabit.Properties.Resources.white_star;
             this.pb44.Location = new System.Drawing.Point(444, 382);
             this.pb44.Margin = new System.Windows.Forms.Padding(4);
             this.pb44.Name = "pb44";
@@ -806,6 +816,7 @@ namespace MyHabit
             // 
             // pb555
             // 
+            this.pb555.Image = global::MyHabit.Properties.Resources.white_star;
             this.pb555.Location = new System.Drawing.Point(675, 459);
             this.pb555.Margin = new System.Windows.Forms.Padding(4);
             this.pb555.Name = "pb555";
@@ -816,6 +827,7 @@ namespace MyHabit
             // 
             // pb444
             // 
+            this.pb444.Image = global::MyHabit.Properties.Resources.white_star;
             this.pb444.Location = new System.Drawing.Point(627, 459);
             this.pb444.Margin = new System.Windows.Forms.Padding(4);
             this.pb444.Name = "pb444";
@@ -826,6 +838,7 @@ namespace MyHabit
             // 
             // pb333
             // 
+            this.pb333.Image = global::MyHabit.Properties.Resources.white_star;
             this.pb333.Location = new System.Drawing.Point(579, 459);
             this.pb333.Margin = new System.Windows.Forms.Padding(4);
             this.pb333.Name = "pb333";
@@ -836,6 +849,7 @@ namespace MyHabit
             // 
             // pb222
             // 
+            this.pb222.Image = global::MyHabit.Properties.Resources.white_star;
             this.pb222.Location = new System.Drawing.Point(531, 459);
             this.pb222.Margin = new System.Windows.Forms.Padding(4);
             this.pb222.Name = "pb222";
@@ -846,6 +860,7 @@ namespace MyHabit
             // 
             // pb111
             // 
+            this.pb111.Image = global::MyHabit.Properties.Resources.white_star;
             this.pb111.Location = new System.Drawing.Point(483, 459);
             this.pb111.Margin = new System.Windows.Forms.Padding(4);
             this.pb111.Name = "pb111";
@@ -1066,7 +1081,7 @@ namespace MyHabit
             this.richtxtMesaage.Name = "richtxtMesaage";
             this.richtxtMesaage.Size = new System.Drawing.Size(309, 227);
             this.richtxtMesaage.TabIndex = 11;
-            this.richtxtMesaage.Text = "";
+            this.richtxtMesaage.Text = "Đã đến lúc phải dậy rồi !!!!";
             // 
             // cmbSnooze
             // 

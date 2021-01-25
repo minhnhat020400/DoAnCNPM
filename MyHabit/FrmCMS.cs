@@ -29,7 +29,7 @@ namespace MyHabit
         string snoozeTime;
         bool snoozeSet = false;
 
-        string wavpath = @"D:\Ringtone\";
+        string wavpath = @"C:\Ringtone\";
         SoundPlayer soundPlayer;
 
         ringringForm ringForm;
@@ -870,7 +870,7 @@ namespace MyHabit
 
         private void btnrate3_Click_1(object sender, EventArgs e)
         {
-            _ngu = double.Parse(txtketqua.Text);
+                _ngu = double.Parse(txtketqua.Text);
 
             if (_ngu < 7)
             {

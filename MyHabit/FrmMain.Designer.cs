@@ -173,10 +173,10 @@ namespace MyHabit
             this.btnMy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.btnMy.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMy.ForeColor = System.Drawing.Color.Purple;
-            this.btnMy.Location = new System.Drawing.Point(431, 184);
+            this.btnMy.Location = new System.Drawing.Point(420, 134);
             this.btnMy.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnMy.Name = "btnMy";
-            this.btnMy.Size = new System.Drawing.Size(389, 104);
+            this.btnMy.Size = new System.Drawing.Size(455, 104);
             this.btnMy.TabIndex = 4;
             this.btnMy.Text = "Check bản thân";
             this.btnMy.UseVisualStyleBackColor = false;
@@ -198,7 +198,7 @@ namespace MyHabit
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.Purple;
-            this.button2.Location = new System.Drawing.Point(396, 294);
+            this.button2.Location = new System.Drawing.Point(420, 278);
             this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(455, 93);
@@ -212,10 +212,10 @@ namespace MyHabit
             this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.Purple;
-            this.button4.Location = new System.Drawing.Point(355, 395);
+            this.button4.Location = new System.Drawing.Point(420, 413);
             this.button4.Margin = new System.Windows.Forms.Padding(4);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(531, 93);
+            this.button4.Size = new System.Drawing.Size(455, 93);
             this.button4.TabIndex = 7;
             this.button4.Text = "Thống Kê Tháng";
             this.button4.UseVisualStyleBackColor = false;
