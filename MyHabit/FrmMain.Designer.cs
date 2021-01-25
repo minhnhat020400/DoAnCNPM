@@ -43,6 +43,7 @@ namespace MyHabit
             this.btnMy = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -100,7 +101,8 @@ namespace MyHabit
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.btnWep);
             this.panel1.Controls.Add(this.button1);
-            this.panel1.Location = new System.Drawing.Point(0, 54);
+            this.panel1.Location = new System.Drawing.Point(0, 66);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(188, 396);
             this.panel1.TabIndex = 2;
@@ -168,13 +170,13 @@ namespace MyHabit
             // 
             // btnMy
             // 
-            this.btnMy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnMy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.btnMy.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMy.ForeColor = System.Drawing.Color.Purple;
-            this.btnMy.Location = new System.Drawing.Point(324, 139);
-            this.btnMy.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMy.Location = new System.Drawing.Point(420, 134);
+            this.btnMy.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnMy.Name = "btnMy";
-            this.btnMy.Size = new System.Drawing.Size(363, 95);
+            this.btnMy.Size = new System.Drawing.Size(455, 104);
             this.btnMy.TabIndex = 4;
             this.btnMy.Text = "Kiểm tra bản thân";
             this.btnMy.UseVisualStyleBackColor = false;
@@ -183,7 +185,8 @@ namespace MyHabit
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(188, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(251, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(613, 86);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -192,16 +195,31 @@ namespace MyHabit
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.Purple;
-            this.button2.Location = new System.Drawing.Point(324, 262);
+            this.button2.Location = new System.Drawing.Point(420, 278);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(363, 92);
+            this.button2.Size = new System.Drawing.Size(455, 93);
             this.button2.TabIndex = 6;
             this.button2.Text = "Thống Kê Tuần";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.Purple;
+            this.button4.Location = new System.Drawing.Point(420, 413);
+            this.button4.Margin = new System.Windows.Forms.Padding(4);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(455, 93);
+            this.button4.TabIndex = 7;
+            this.button4.Text = "Thống Kê Tháng";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // FrmMain
             // 
@@ -216,6 +234,7 @@ namespace MyHabit
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
@@ -243,5 +262,6 @@ namespace MyHabit
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button4;
     }
 }

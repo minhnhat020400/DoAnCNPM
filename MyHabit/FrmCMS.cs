@@ -36,7 +36,7 @@ namespace MyHabit
 
         static HttpClient client = new HttpClient();
 
-        public static string Token1 = FrmLogin.Token;
+        public static string Token1 = FrmLogin.TokenMess;
 
         // API sleep////////////////////////////
         public class Hour

@@ -58,5 +58,12 @@ namespace MyHabit
             this.Hide();
             frm.ShowDialog();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            FrmMonth frmMonth = new FrmMonth();
+            this.Hide();
+            frmMonth.Show();
+        }
     }
 }

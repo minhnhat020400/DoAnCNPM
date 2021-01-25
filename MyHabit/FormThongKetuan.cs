@@ -26,7 +26,13 @@ namespace MyHabit
         }
 
         public static DateTime TimeCTN;
+        public static double Tongcalotuannay;
+        public static double TongMinituannay;
+        public static double TongThoiGiantuannay;
 
+        public static double TongcalotuanTruoc;
+        public static double TongMinituanTruoc;
+        public static double TongThoiGiantuantruoc;
 
         private void btnHome_Click_1(object sender, EventArgs e)
         {
@@ -55,33 +61,33 @@ namespace MyHabit
                         this.chartAn.Series["an"].Points.AddXY("thứ 2", a[i]);
 
                         // thay đổi mau của cột theo đk
-                        if (a[i] >= 10500 && a[i] <= 17500)
+                        if (a[i] >= 1500 && a[i] <= 2500)
                             chartAn.Series["an"].Points[i].Color = Color.Aqua;
-                        if (a[i] < 10500)
+                        if (a[i] < 1500)
                             chartAn.Series["an"].Points[i].Color = Color.Green;
-                        if (a[i] > 17500)
+                        if (a[i] > 2500)
                             chartAn.Series["an"].Points[i].Color = Color.Red;
 
                         break;
                     case 1:
                         this.chartAn.Series["an"].Points.AddXY("thứ 3", a[i]);
 
-                        if (a[i] >= 10500 && a[i] <= 17500)
+                        if (a[i] >= 1500 && a[i] <= 2500)
                             this.chartAn.Series["an"].Points[i].Color = Color.Aqua;
-                        if (a[i] < 10500)
+                        if (a[i] < 1500)
                             this.chartAn.Series["an"].Points[i].Color = Color.Green;
-                        if (a[i] > 17500)
+                        if (a[i] > 2500)
                             this.chartAn.Series["an"].Points[i].Color = Color.Red;
 
                         break;
                     case 2:
                         this.chartAn.Series["an"].Points.AddXY("thứ 4", a[i]);
 
-                        if (a[i] >= 10500 && a[i] <= 17500)
+                        if (a[i] >= 1500 && a[i] <= 2500)
                             this.chartAn.Series["an"].Points[i].Color = Color.Aqua;
-                        if (a[i] < 10500)
+                        if (a[i] < 1500)
                             this.chartAn.Series["an"].Points[i].Color = Color.Green;
-                        if (a[i] > 17500)
+                        if (a[i] > 2500)
                             this.chartAn.Series["an"].Points[i].Color = Color.Red;
 
                         break;
@@ -89,44 +95,44 @@ namespace MyHabit
                     case 3:
                         this.chartAn.Series["an"].Points.AddXY("thứ 5", a[i]);
 
-                        if (a[i] >= 10500 && a[i] <= 17500)
+                        if (a[i] >= 105150000 && a[i] <= 2500)
                             this.chartAn.Series["an"].Points[i].Color = Color.Aqua;
-                        if (a[i] < 10500)
+                        if (a[i] < 1500)
                             this.chartAn.Series["an"].Points[i].Color = Color.Green;
-                        if (a[i] > 17500)
+                        if (a[i] > 2500)
                             this.chartAn.Series["an"].Points[i].Color = Color.Red;
 
                         break;
                     case 4:
                         this.chartAn.Series["an"].Points.AddXY("thứ 6", a[i]);
 
-                        if (a[i] >= 10500 && a[i] <= 17500)
+                        if (a[i] >= 1500 && a[i] <= 2500)
                             this.chartAn.Series["an"].Points[i].Color = Color.Aqua;
-                        if (a[i] < 10500)
+                        if (a[i] < 1500)
                             this.chartAn.Series["an"].Points[i].Color = Color.Green;
-                        if (a[i] > 17500)
+                        if (a[i] > 2500)
                             this.chartAn.Series["an"].Points[i].Color = Color.Red;
                         break;
                     case 5:
                         this.chartAn.Series["an"].Points.AddXY("thứ 7", a[i]);
 
 
-                        if (a[i] >= 10500 && a[i] <= 17500)
+                        if (a[i] >= 1500 && a[i] <= 2500)
                             this.chartAn.Series["an"].Points[i].Color = Color.Aqua;
-                        if (a[i] < 10500)
+                        if (a[i] < 1500)
                             this.chartAn.Series["an"].Points[i].Color = Color.Green;
-                        if (a[i] > 17500)
+                        if (a[i] > 2500)
                             this.chartAn.Series["an"].Points[i].Color = Color.Red;
 
                         break;
                     case 6:
                         this.chartAn.Series["an"].Points.AddXY("chủ nhật", a[i]);
 
-                        if (a[i] >= 10500 && a[i] <= 17500)
+                        if (a[i] >= 1500 && a[i] <= 2500)
                             this.chartAn.Series["an"].Points[i].Color = Color.Aqua;
-                        if (a[i] < 10500)
+                        if (a[i] < 1500)
                             this.chartAn.Series["an"].Points[i].Color = Color.Green;
-                        if (a[i] > 17500)
+                        if (a[i] > 2500)
                             this.chartAn.Series["an"].Points[i].Color = Color.Red;
 
                         break;
@@ -143,71 +149,71 @@ namespace MyHabit
                     case 0:
                         this.chartUong.Series["uong"].Points.AddXY("thứ 2", a[i]);
 
-                        if (a[i] >= 8 && a[i] <= 14)
+                        if (a[i] >= 1000 && a[i] <= 2000)
                             chartUong.Series["uong"].Points[i].Color = Color.Aqua;
-                        if (a[i] < 8)
+                        if (a[i] < 1000)
                             chartUong.Series["uong"].Points[i].Color = Color.Green;
-                        if (a[i] > 14)
+                        if (a[i] > 2000)
                             chartUong.Series["uong"].Points[i].Color = Color.Red;
                         break;
                     case 1:
                         this.chartUong.Series["uong"].Points.AddXY("thứ 3", a[i]);
 
-                        if (a[i] >= 8 && a[i] <= 14)
+                        if (a[i] >= 1000 && a[i] <= 2000)
                             chartUong.Series["uong"].Points[i].Color = Color.Aqua;
-                        if (a[i] < 8)
+                        if (a[i] < 1000)
                             chartUong.Series["uong"].Points[i].Color = Color.Green;
-                        if (a[i] > 14)
+                        if (a[i] > 2000)
                             chartUong.Series["uong"].Points[i].Color = Color.Red;
                         break;
                     case 2:
                         this.chartUong.Series["uong"].Points.AddXY("thứ 4", a[i]);
 
-                        if (a[i] >= 8 && a[i] <= 14)
+                        if (a[i] >= 1000 && a[i] <= 2000)
                             chartUong.Series["uong"].Points[i].Color = Color.Aqua;
-                        if (a[i] < 8)
+                        if (a[i] < 1000)
                             chartUong.Series["uong"].Points[i].Color = Color.Green;
-                        if (a[i] > 14)
+                        if (a[i] > 2000)
                             chartUong.Series["uong"].Points[i].Color = Color.Red;
                         break;
                     case 3:
                         this.chartUong.Series["uong"].Points.AddXY("thứ 5", a[i]);
 
-                        if (a[i] >= 8 && a[i] <= 14)
+                        if (a[i] >= 1000 && a[i] <= 2000)
                             chartUong.Series["uong"].Points[i].Color = Color.Aqua;
-                        if (a[i] < 8)
+                        if (a[i] < 1000)
                             chartUong.Series["uong"].Points[i].Color = Color.Green;
-                        if (a[i] > 14)
+                        if (a[i] > 2000)
                             chartUong.Series["uong"].Points[i].Color = Color.Red;
                         break;
                     case 4:
                         this.chartUong.Series["uong"].Points.AddXY("thứ 6", a[i]);
 
-                        if (a[i] >= 8 && a[i] <= 14)
+                        if (a[i] >= 1000 && a[i] <= 2000)
                             chartUong.Series["uong"].Points[i].Color = Color.Aqua;
-                        if (a[i] < 8)
+                        if (a[i] < 1000)
                             chartUong.Series["uong"].Points[i].Color = Color.Green;
-                        if (a[i] > 14)
+                        if (a[i] > 2000)
                             chartUong.Series["uong"].Points[i].Color = Color.Red;
                         break;
                     case 5:
                         this.chartUong.Series["uong"].Points.AddXY("thứ 7", a[i]);
 
-                        if (a[i] >= 8 && a[i] <= 14)
+                        if (a[i] >= 1000 && a[i] <= 2000)
                             chartUong.Series["uong"].Points[i].Color = Color.Aqua;
-                        if (a[i] < 8)
+                        if (a[i] < 1000)
                             chartUong.Series["uong"].Points[i].Color = Color.Green;
-                        if (a[i] > 14)
+                        if (a[i] > 2000)
                             chartUong.Series["uong"].Points[i].Color = Color.Red;
                         break;
                     case 6:
                         this.chartUong.Series["uong"].Points.AddXY("chủ nhật", a[i]);
 
-                        if (a[i] >= 8 && a[i] <= 14)
+                        if (a[i] >= 1000 && a[i] <= 2000)
                             chartUong.Series["uong"].Points[i].Color = Color.Aqua;
-                        if (a[i] < 8)
+                        if (a[i] < 1000)
                             chartUong.Series["uong"].Points[i].Color = Color.Green;
-                        if (a[i] > 14)
+                        if (a[i] > 2000)
                             chartUong.Series["uong"].Points[i].Color = Color.Red;
                         break;
                 }
@@ -222,77 +228,77 @@ namespace MyHabit
                     case 0:
                         this.chartNgu.Series["ngu"].Points.AddXY("thứ 2", a[i]);
 
-                        if (a[i] >= 42 && a[i] <= 64)
+                        if (a[i] >= 360 && a[i] <= 480)
                             chartNgu.Series["ngu"].Points[i].Color = Color.Aqua;
-                        if (a[i] < 42)
+                        if (a[i] < 360)
                             chartNgu.Series["ngu"].Points[i].Color = Color.Green;
-                        if (a[i] > 64)
+                        if (a[i] > 480)
                             chartNgu.Series["ngu"].Points[i].Color = Color.Red;
 
                         break;
                     case 1:
                         this.chartNgu.Series["ngu"].Points.AddXY("thứ 3", a[i]);
 
-                        if (a[i] >= 42 && a[i] <= 64)
+                        if (a[i] >= 360 && a[i] <= 480)
                             chartNgu.Series["ngu"].Points[i].Color = Color.Aqua;
-                        if (a[i] < 42)
+                        if (a[i] < 360)
                             chartNgu.Series["ngu"].Points[i].Color = Color.Green;
-                        if (a[i] > 64)
+                        if (a[i] > 480)
                             chartNgu.Series["ngu"].Points[i].Color = Color.Red;
 
                         break;
                     case 2:
                         this.chartNgu.Series["ngu"].Points.AddXY("thứ 4", a[i]);
 
-                        if (a[i] >= 42 && a[i] <= 64)
+                        if (a[i] >= 360 && a[i] <= 480)
                             chartNgu.Series["ngu"].Points[i].Color = Color.Aqua;
-                        if (a[i] < 42)
+                        if (a[i] < 360)
                             chartNgu.Series["ngu"].Points[i].Color = Color.Green;
-                        if (a[i] > 64)
+                        if (a[i] > 480)
                             chartNgu.Series["ngu"].Points[i].Color = Color.Red;
 
                         break;
                     case 3:
                         this.chartNgu.Series["ngu"].Points.AddXY("thứ 5", a[i]);
 
-                        if (a[i] >= 42 && a[i] <= 64)
+                        if (a[i] >= 360 && a[i] <= 480)
                             chartNgu.Series["ngu"].Points[i].Color = Color.Aqua;
-                        if (a[i] < 42)
+                        if (a[i] < 360)
                             chartNgu.Series["ngu"].Points[i].Color = Color.Green;
-                        if (a[i] > 64)
+                        if (a[i] > 480)
                             chartNgu.Series["ngu"].Points[i].Color = Color.Red;
 
                         break;
                     case 4:
                         this.chartNgu.Series["ngu"].Points.AddXY("thứ 6", a[i]);
 
-                        if (a[i] >= 42 && a[i] <= 64)
+                        if (a[i] >= 360 && a[i] <= 480)
                             chartNgu.Series["ngu"].Points[i].Color = Color.Aqua;
-                        if (a[i] < 42)
+                        if (a[i] < 360)
                             chartNgu.Series["ngu"].Points[i].Color = Color.Green;
-                        if (a[i] > 64)
+                        if (a[i] > 480)
                             chartNgu.Series["ngu"].Points[i].Color = Color.Red;
 
                         break;
                     case 5:
                         this.chartNgu.Series["ngu"].Points.AddXY("thứ 7", a[i]);
 
-                        if (a[i] >= 42 && a[i] <= 64)
+                        if (a[i] >= 360 && a[i] <= 480)
                             chartNgu.Series["ngu"].Points[i].Color = Color.Aqua;
-                        if (a[i] < 42)
+                        if (a[i] < 360)
                             chartNgu.Series["ngu"].Points[i].Color = Color.Green;
-                        if (a[i] > 64)
+                        if (a[i] > 480)
                             chartNgu.Series["ngu"].Points[i].Color = Color.Red;
 
                         break;
                     case 6:
                         this.chartNgu.Series["ngu"].Points.AddXY("chủ nhật", a[i]);
 
-                        if (a[i] >= 42 && a[i] <= 64)
+                        if (a[i] >= 360 && a[i] <= 480)
                             chartNgu.Series["ngu"].Points[i].Color = Color.Aqua;
-                        if (a[i] < 42)
+                        if (a[i] < 360)
                             chartNgu.Series["ngu"].Points[i].Color = Color.Green;
-                        if (a[i] > 64)
+                        if (a[i] > 8)
                             chartNgu.Series["ngu"].Points[i].Color = Color.Red;
 
                         break;
@@ -319,38 +325,80 @@ namespace MyHabit
             FstDate = caloTuans[0].createAt;
             LstDate = caloTuans[6].createAt;
             loadDate(FstDate, LstDate);
+            danhgia();
         }
 
         public double[] TackCaloWeek(List<CaloTuan> caloTuans)
         {
             double[] t = new double[7];
-
+            double tong = 0;
             for (int i = 0; i < caloTuans.Count; i++)
             {
                 t[i] = double.Parse(caloTuans[i].total);
+                tong = tong + t[1];
             }
+            Tongcalotuannay = tong;
             return t;
         }
         public double[] TackwaterWeek(List<CaloTuan> caloTuans)
         {
             double[] t = new double[7];
-
+            double tong = 0;
             for (int i = 0; i < caloTuans.Count; i++)
             {
                 t[i] = double.Parse(caloTuans[i].total);
+                tong = tong + t[1];
             }
+            TongMinituannay = tong;
             return t;
         }
         public double[] TackTimerWeek(List<CaloTuan> caloTuans)
         {
             double[] t = new double[7];
+            double tong = 0;
 
             for (int i = 0; i < caloTuans.Count; i++)
             {
                 t[i] = double.Parse(caloTuans[i].total);
             }
+            TongThoiGiantuannay = tong;
             return t;
         }
+
+        public  void TackCaloLastWeek(List<CaloTuan> caloTuans)
+        {
+            double[] t = new double[7];
+            double tong = 0;
+            for (int i = 0; i < caloTuans.Count; i++)
+            {
+                t[i] = double.Parse(caloTuans[i].total);
+                tong = tong + t[1];
+            }
+            TongcalotuanTruoc = tong;
+        }
+        public void TackWaterLastWeek(List<CaloTuan> caloTuans)
+        {
+            double[] t = new double[7];
+            double tong = 0;
+            for (int i = 0; i < caloTuans.Count; i++)
+            {
+                t[i] = double.Parse(caloTuans[i].total);
+                tong = tong + t[1];
+            }
+            TongMinituanTruoc = tong;
+        }
+        public void TackTimeLastWeek(List<CaloTuan> caloTuans)
+        {
+            double[] t = new double[7];
+            double tong = 0;
+            for (int i = 0; i < caloTuans.Count; i++)
+            {
+                t[i] = double.Parse(caloTuans[i].total);
+                tong = tong + t[1];
+            }
+            TongThoiGiantuantruoc = tong;
+        }
+
 
         private async void btStreat_Click(object sender, EventArgs e)
         {
@@ -374,6 +422,7 @@ namespace MyHabit
             LstDate = caloTuans[6].createAt;
 
             loadDate(FstDate, LstDate);
+            danhgia();
 
         }
         private async void btNext_Click(object sender, EventArgs e)
@@ -398,6 +447,7 @@ namespace MyHabit
             LstDate = caloTuans[6].createAt;
 
             loadDate(FstDate, LstDate);
+            danhgia();
 
         }
         #region Call API 
@@ -412,7 +462,7 @@ namespace MyHabit
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", FrmLogin.TokenMess);
 
             // Link api
-            String apiUrl = "/api/drinking-habits/statistical-total-calo-in-week?week=" + ngay;
+            String apiUrl = "/api/eating-habits/statistical-total-calo-in-week?week=" + ngay;
 
             // Model  để gửi dữ liệu lên server
             HttpResponseMessage response = await client.GetAsync(apiUrl); // login là body của api
@@ -443,7 +493,7 @@ namespace MyHabit
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", FrmLogin.TokenMess);
 
             // Link api
-            String apiUrl = "/api/drinking-habits/statistical-total-calo-in-week?week=" + ngay;
+            String apiUrl = "/api/drinking-habits/statistical-total-mili-in-week?week=" + ngay;
 
             HttpResponseMessage response = await client.GetAsync(apiUrl); // login là body của api
 
@@ -539,6 +589,93 @@ namespace MyHabit
                     break;
 
             }
+        }
+
+        private async void button2_Click(object sender, EventArgs e)
+        {
+            TimeCTN = DateTime.Now;
+            string ngay = TimeCTN.ToString("dd/MM/yyyy");
+
+            List<CaloTuan> caloTuans = await GetCaloTuan(ngay);
+            List<CaloTuan> waters = await GetWaterTuan(ngay);
+            List<CaloTuan> Sleep = await GetSleepTuan(ngay);
+
+            this.chartAn.Series["an"].Points.Clear();
+            this.chartUong.Series["uong"].Points.Clear();
+            this.chartNgu.Series["ngu"].Points.Clear();
+
+            loadAn(TackCaloWeek(caloTuans));
+            loadUong(TackwaterWeek(waters));
+            loadNgu(TackTimerWeek(Sleep));
+        }
+
+        public async void danhgia()
+        {
+            DateTime date = TimeCTN.AddDays(-7);
+            List<CaloTuan> caloTuans = await GetCaloTuan(date.ToString("dd/MM/yyyy"));
+            List<CaloTuan> waters = await GetWaterTuan(date.ToString("dd/MM/yyyy"));
+            List<CaloTuan> Sleep = await GetSleepTuan(date.ToString("dd/MM/yyyy"));
+
+            TackCaloLastWeek(caloTuans);
+            TackwaterWeek(waters);
+            TackTimerWeek(Sleep);
+            double resuit1 = Tongcalotuannay - TongcalotuanTruoc;
+            double resuit2 = TongMinituannay - TongMinituanTruoc;
+            double resuit3 = TongThoiGiantuannay - TongThoiGiantuantruoc;
+
+            string t1 = "";
+            string t2="";
+            string t3="";
+            if (resuit1 < 0)
+            {
+                t1 = ". Đã giảm " + resuit1 * (-1) + " so vớ tuần trước";
+            }
+            else if (resuit1 == 0)
+            {
+                t1 = ". Không có thay đổi " + " so vớ tuần trước";
+            }
+            else if (resuit1 > 0)
+            {
+                t1 = ". Đã tăng " + resuit1 * (1) + " so vớ tuần trước";
+            }
+
+            if (resuit2 < 0)
+            {
+                t2 = ". Đã giảm " + resuit2 * (-1) + " so vớ tuần trước";
+            }
+            else if (resuit2 == 0)
+            {
+                t2 = ". Không có thay đổi " + " so vớ tuần trước";
+            }
+            else if (resuit2 > 0)
+            {
+                t2 = ". Đã tăng " + resuit2 * (1) + " so vớ tuần trước";
+            }
+
+            if (resuit3 < 0)
+            {
+                t3 = ". Đã giảm " + resuit3 * (-1) + " so vớ tuần trước";
+            }
+            else if (resuit3 == 0)
+            {
+                t3 = ". Không có thay đổi " + " so vớ tuần trước";
+            }
+            else if (resuit3 > 0)
+            {
+                t3 = ". Đã tăng " + resuit3 * (1) + " so vớ tuần trước";
+            }
+
+            richTextBox1.Text = " Đánh giá tuần này:"
+                                + "\n lượng calories tuần này =" + Tongcalotuannay +"  Calories "+ t1
+                               + "\n lượng nước tuần này =" + TongMinituannay + " Mililit Nước "+t2
+                               + "\n lượng thời gian ngủ tuần này =" + TongThoiGiantuannay + " Phút "+ t3;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            FrmBMI frmBMI = new FrmBMI();
+            this.Hide();
+            frmBMI.Show();
         }
     }
 }
