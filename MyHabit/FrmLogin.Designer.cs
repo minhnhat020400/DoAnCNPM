@@ -183,7 +183,7 @@ namespace MyHabit
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(348, 37);
             this.txtName.TabIndex = 12;
-            this.txtName.Text = "trang";
+            this.txtName.Text = "swagger1";
             // 
             // pictureBox4
             // 

@@ -119,12 +119,6 @@
     <Compile Include="FrmforgetPassword.Designer.cs">
       <DependentUpon>FrmforgetPassword.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmCheck.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmCheck.Designer.cs">
-      <DependentUpon>FrmCheck.cs</DependentUpon>
-    </Compile>
     <Compile Include="FrmBMI.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -143,29 +137,17 @@
     <Compile Include="FrmCreateAccount.Designer.cs">
       <DependentUpon>FrmCreateAccount.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmDrink.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmDrink.Designer.cs">
-      <DependentUpon>FrmDrink.cs</DependentUpon>
-    </Compile>
     <Compile Include="FrmMain.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmMain.Designer.cs">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmSleep.cs">
+    <Compile Include="FrmCMS.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmSleep.Designer.cs">
-      <DependentUpon>FrmSleep.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmToMo.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmToMo.Designer.cs">
-      <DependentUpon>FrmToMo.cs</DependentUpon>
+    <Compile Include="FrmCMS.Designer.cs">
+      <DependentUpon>FrmCMS.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmLogin.cs">
       <SubType>Form</SubType>
@@ -181,12 +163,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="FrmEat.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmEat.Designer.cs">
-      <DependentUpon>FrmEat.cs</DependentUpon>
-    </Compile>
     <Compile Include="ringringForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -199,15 +175,6 @@
     <EmbeddedResource Include="FrmCreateAccount.resx">
       <DependentUpon>FrmCreateAccount.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmDrink.resx">
-      <DependentUpon>FrmDrink.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmEat.resx">
-      <DependentUpon>FrmEat.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmCheck.resx">
-      <DependentUpon>FrmCheck.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FormThongKetuan.resx">
       <DependentUpon>FormThongKetuan.cs</DependentUpon>
     </EmbeddedResource>
@@ -217,11 +184,8 @@
     <EmbeddedResource Include="FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmSleep.resx">
-      <DependentUpon>FrmSleep.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmToMo.resx">
-      <DependentUpon>FrmToMo.cs</DependentUpon>
+    <EmbeddedResource Include="FrmCMS.resx">
+      <DependentUpon>FrmCMS.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
@@ -237,6 +201,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="ringringForm.resx">
       <DependentUpon>ringringForm.cs</DependentUpon>
@@ -254,6 +219,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\white star.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yellow star.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
