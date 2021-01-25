@@ -31,9 +31,7 @@ namespace MyHabit
 
         private void button3_Click(object sender, EventArgs e)
         {
-            FrmSleep frm = new FrmSleep();
-            this.Hide();
-            frm.ShowDialog();
+
         }
 
         private void button1_Click(object sender, EventArgs e)

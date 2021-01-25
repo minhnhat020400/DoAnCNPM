@@ -32,7 +32,7 @@ namespace MyHabit
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmDrink));
             this.revenueBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.data1 = new MyHabit.Data1();
+            //this.data1 = new MyHabit.Data1();
             this.data1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -42,7 +42,7 @@ namespace MyHabit
             this.lbml = new System.Windows.Forms.Label();
             this.btnHome = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.revenueBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.data1)).BeginInit();
+//            ((System.ComponentModel.ISupportInitialize)(this.data1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.data1BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -50,16 +50,16 @@ namespace MyHabit
             // revenueBindingSource
             // 
             this.revenueBindingSource.DataMember = "Revenue";
-            this.revenueBindingSource.DataSource = this.data1;
+ //           this.revenueBindingSource.DataSource = this.data1;
             // 
             // data1
             // 
-            this.data1.DataSetName = "Data1";
-            this.data1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+   //         this.data1.DataSetName = "Data1";
+   //         this.data1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // data1BindingSource
             // 
-            this.data1BindingSource.DataSource = this.data1;
+ //           this.data1BindingSource.DataSource = this.data1;
             this.data1BindingSource.Position = 0;
             // 
             // pictureBox1
@@ -152,7 +152,7 @@ namespace MyHabit
             this.Text = "FrmDrink";
             this.Load += new System.EventHandler(this.FrmDrink_Load);
             ((System.ComponentModel.ISupportInitialize)(this.revenueBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.data1)).EndInit();
+//           ((System.ComponentModel.ISupportInitialize)(this.data1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.data1BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -162,7 +162,7 @@ namespace MyHabit
 
         #endregion
         private System.Windows.Forms.BindingSource revenueBindingSource;
-        private Data1 data1;
+ //       private Data1 data1;
         private System.Windows.Forms.BindingSource data1BindingSource;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;

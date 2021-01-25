@@ -31,7 +31,7 @@ namespace MyHabit
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            SaveSetting()
+ //           SaveSetting()
         }
         public void GetSetting()
         {
@@ -41,7 +41,6 @@ namespace MyHabit
         {
             Properties.Settings.Default.ML = Convert.ToInt32(txtNuoc.Text);
             
-
             Properties.Settings.Default.Save();
         }
 

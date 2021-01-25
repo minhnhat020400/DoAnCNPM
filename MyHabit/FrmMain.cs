@@ -40,7 +40,7 @@ namespace MyHabit
 
         private void btnMy_Click(object sender, EventArgs e)
         {
-            FrmCheck frm = new FrmCheck();
+            FrmCMS frm = new FrmCMS();
             this.Hide();
             frm.ShowDialog();
         }
@@ -57,6 +57,13 @@ namespace MyHabit
             FormThongKetuan frm = new FormThongKetuan();
             this.Hide();
             frm.ShowDialog();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            FrmMonth frmMonth = new FrmMonth();
+            this.Hide();
+            frmMonth.Show();
         }
     }
 }

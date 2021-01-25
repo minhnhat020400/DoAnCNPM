@@ -36,17 +36,19 @@ namespace MyHabit
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(12, 12);
+            this.richTextBox1.Location = new System.Drawing.Point(16, 15);
+            this.richTextBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(285, 206);
+            this.richTextBox1.Size = new System.Drawing.Size(379, 253);
             this.richTextBox1.TabIndex = 0;
             this.richTextBox1.Text = "";
             // 
             // btnOK
             // 
-            this.btnOK.Location = new System.Drawing.Point(12, 261);
+            this.btnOK.Location = new System.Drawing.Point(16, 321);
+            this.btnOK.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnOK.Name = "btnOK";
-            this.btnOK.Size = new System.Drawing.Size(75, 23);
+            this.btnOK.Size = new System.Drawing.Size(100, 28);
             this.btnOK.TabIndex = 1;
             this.btnOK.Text = "OK";
             this.btnOK.UseVisualStyleBackColor = true;
@@ -54,9 +56,10 @@ namespace MyHabit
             // 
             // btnSnooze
             // 
-            this.btnSnooze.Location = new System.Drawing.Point(223, 261);
+            this.btnSnooze.Location = new System.Drawing.Point(297, 321);
+            this.btnSnooze.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSnooze.Name = "btnSnooze";
-            this.btnSnooze.Size = new System.Drawing.Size(75, 23);
+            this.btnSnooze.Size = new System.Drawing.Size(100, 28);
             this.btnSnooze.TabIndex = 2;
             this.btnSnooze.Text = "Snooze";
             this.btnSnooze.UseVisualStyleBackColor = true;
@@ -64,14 +67,16 @@ namespace MyHabit
             // 
             // ringringForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(310, 343);
+            this.ClientSize = new System.Drawing.Size(413, 422);
             this.Controls.Add(this.btnSnooze);
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.richTextBox1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "ringringForm";
             this.Text = "ringringForm";
+            this.Load += new System.EventHandler(this.ringringForm_Load);
             this.Shown += new System.EventHandler(this.ringringForm_Shown);
             this.ResumeLayout(false);
 
