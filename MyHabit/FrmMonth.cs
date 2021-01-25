@@ -323,5 +323,19 @@ namespace MyHabit
                     break;
             }
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            FrmBMI frmBMI = new FrmBMI();
+            this.Hide();
+            frmBMI.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FrmMyInFo frmMyInFo = new FrmMyInFo();
+            this.Hide();
+            frmMyInFo.Show();
+        }
     }
 }
